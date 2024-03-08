@@ -21,7 +21,7 @@ class Car
 			return name;
 		}
 		public void setName(String name) {
-			name = name;
+			this.name = name;
 			System.out.println(name);
 			name = this.name;
 			System.out.println(name);

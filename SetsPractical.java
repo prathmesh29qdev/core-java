@@ -2,6 +2,7 @@ package projects;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Scanner;
 
 public class SetsPractical {
 
@@ -9,17 +10,30 @@ public class SetsPractical {
 		
 		HashSet<Integer> set = new HashSet<>();
 	
-		set.add(82);
-		set.add(21);
-		set.add(45);
-		set.add(32);
-		set.add(82);
+		System.out.println("enter number of elements you want to add in set");
+		Scanner sc = new Scanner(System.in);
+		int numberOfElement = sc.nextInt();
 		
-		if(set.contains(82))
+		System.out.println("Enter " + " numbers to add in set");
+		for(int i=0; i<numberOfElement;i++)
+		{
+			set.add(sc.nextInt());
+		}
+//		set.add(82);
+//		set.add(21);
+//		set.add(45);
+//		set.add(32);
+//		set.add(82);
+		
+		System.out.println("Enter any number to check if is is in the Set");
+		
+		int number = sc.nextInt();
+		
+		if(set.contains(number))
 		{
 			System.out.println("Set has this value");
 		}
-		if(!set.contains(2))
+		if(!set.contains(number))
 		{
 			System.out.println("Set doesn't have this value");		
 		}

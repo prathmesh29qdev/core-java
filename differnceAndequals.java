@@ -1,14 +1,34 @@
 import java.math.BigDecimal;
+import java.util.Scanner;
 
 public class differnceAndequals {
 
 	public static void main(String[] args) {
-		Integer number1 = 10;
-		Integer number2 = 10;
-		String string1 = "Qdev";
-		String string2 = "Technolab";
-		BigDecimal bd1 =  new BigDecimal("0.45"); 
-	    BigDecimal bd2 =  new BigDecimal("0.45"); 
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter two numbers");
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+	
+		Integer number1 = num1;
+		Integer number2 = num2;
+		
+		sc.nextLine();
+		
+		System.out.println("Enter two strings");
+		String string1 = sc.nextLine();
+		String string2 = sc.nextLine();
+		
+		System.out.println("Enter two bigdecimal. example: 0.45");
+		BigDecimal bd1 = sc.nextBigDecimal();
+		BigDecimal bd2 = sc.nextBigDecimal();
+		
+//		Integer number1 = 10;
+//		Integer number2 = 10;
+//		String string1 = "Qdev";
+//		String string2 = "Technolab";
+//		BigDecimal bd1 =  new BigDecimal("0.45"); 
+//	    BigDecimal bd2 =  new BigDecimal("0.45"); 
 	    
 	    //integer
 	    if(number1 == number2)

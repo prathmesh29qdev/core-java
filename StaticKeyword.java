@@ -29,9 +29,6 @@ public class StaticKeyword {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		StaticKeyword c1=new StaticKeyword();  
-		StaticKeyword c2=new StaticKeyword();  
-		StaticKeyword c3=new StaticKeyword();  
 		
 		Student.change();
 		Student std = new Student(11,"Sam");

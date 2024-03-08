@@ -83,6 +83,9 @@ public class ExceptionHandling {
                 "Caught in main error name given below:");
             System.out.println(e);
         }
-		checkAge(2);
+		System.out.println("Enter your age:");
+		Scanner ageInput = new Scanner(System.in);
+		int age  = sc.nextInt();
+		checkAge(age);
 	}
 }

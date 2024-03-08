@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class HelloWorld {
 
@@ -8,7 +9,9 @@ public class HelloWorld {
 		
 		//if...else
 		System.out.println("if..else output:");
-		int age = 23;
+		System.out.println("Enter a number for age");
+		Scanner sc = new Scanner(System.in);
+		int age = sc.nextInt();
 		
 		if(age <=25)
 		{
@@ -25,7 +28,8 @@ public class HelloWorld {
 		
 		//switch
 		System.out.println("switch case output:");
-		int month = 9;
+		System.out.println("Enter number of month:");
+		int month = sc.nextInt();
 		switch(month) {
 			case 1:
 				System.out.println("January"); 
@@ -64,8 +68,10 @@ public class HelloWorld {
 	            System.out.println("Dec"); 
 	            break;
 		}
+		System.out.println();
+	
 		
-		//while
+		//while to show 1 to 10
 		System.out.println("while:");
 		int num = 1;
 		while(num>0 && num<=10)
@@ -75,8 +81,9 @@ public class HelloWorld {
 		}
 		
 		System.out.println();
+		System.out.println();
 		
-		//do..while
+		//do..while to show 1 to 10
 		System.out.println("for do while:");
 		int num1 = 1;
 		do

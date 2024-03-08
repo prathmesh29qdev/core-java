@@ -9,7 +9,7 @@ public class MapAndSets {
 	public static void main(String[] args) {
 		
 		HashMap<String, Integer> students  = new HashMap<>();
-		
+		//map
 		//insertion
 		students.put("Manan", 34);
 		students.put("Chaman", 67);
