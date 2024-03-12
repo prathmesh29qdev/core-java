@@ -1,48 +1,36 @@
 package projects;
 
-
 //Compile time polymorphism
-class Bikes
-{
+class Bikes {
 	int cc;
 	String brand;
 	String bike;
-	String buyBike(int cc, String brand)
-	{
+	String buyBike(int cc, String brand) {
 		bike = "Bullet";
 		return bike;
-		
 	}
 	
-	String buyBike(int cc)
-	{
+	String buyBike(int cc) {
 		bike = "honda";
 		return bike;
 	}
-	
 }
 
 //Runtime Polymorphism
-class Colors
-{
-	void paint()
-	{
+class Colors {
+	void paint() {
 		System.out.println("all colors will be used in the painting");
 	}
 }
 
-class Blue extends Colors
-{
-	void paint()
-	{
+class Blue extends Colors {
+	void paint() {
 		System.out.println("BLUE color will be used in the painting");
 	}
 }
 
-class Black extends Colors
-{
-	void paint()
-	{
+class Black extends Colors {
+	void paint() {
 		System.out.println("BLACK color will be used in the painting");
 	}
 }
@@ -66,5 +54,4 @@ public class Polymorphism {
 		Colors color1 = new Blue();
 		color1.paint();
 	}
-
 }

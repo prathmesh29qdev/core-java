@@ -2,19 +2,15 @@ import java.util.Scanner;
 
 public class ConstructorPractical {
 
-	ConstructorPractical()
-	{
+	ConstructorPractical() {
 		System.out.println("Constructor Initialixed");
-		
 	}
 	
-	int ConstructorPractical(int number1, int number2)
-	{
+	int ConstructorPractical(int number1, int number2) {
 		System.out.println("Inside parameterized Constructor");
 		int number3;
 		number3 = number1 * number2;
-		return number3;
-		
+		return number3;	
 	}
 	public static void main(String[] args) {
 	

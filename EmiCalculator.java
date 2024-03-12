@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class EmiCalculator {
 
-	public float emiCalc(float principal, float rateOfInterest, float time)
-	{
+	public float emiCalc(float principal, float rateOfInterest, float time) {
 		float emi;
 		rateOfInterest = rateOfInterest / (12 * 100); // one month interest
         time = time * 12; // one month period

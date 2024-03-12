@@ -30,8 +30,7 @@ public class FIleHandling2 {
 		Scanner sc = new Scanner(System.in);
 		boolean shouldContinue = true;
 		
-		while(shouldContinue)
-		{
+		while(shouldContinue) {
 			System.out.println("Enter number according to the option you want to chose");
 			System.out.println("1 for entering string in the file.");
 			System.out.println("2 for reading the file.");
@@ -40,9 +39,7 @@ public class FIleHandling2 {
 			int option = sc.nextInt();
 			sc.nextLine();
 			
-			
-			switch(option)
-			{
+			switch(option) {
 			case 1:
 				//writing in file
 				System.out.println("Enter a string you want to write in the file.");
@@ -59,12 +56,10 @@ public class FIleHandling2 {
 				break;
 			case 2:
 				//read the file
-				try 
-				{
+				try {
 					Scanner re = new Scanner(myFile);
 					
-					while(re.hasNextLine())
-					{
+					while(re.hasNextLine()) {
 						String line = re.nextLine();
 						System.out.println(line);
 					}
@@ -76,21 +71,17 @@ public class FIleHandling2 {
 				break;
 			case 3:
 				//file deleting
-				if(myFile.exists())
-				{
+				if(myFile.exists()) {
 					System.out.println(myFile.getName());
 					boolean deleted = myFile.delete();
-					if(deleted)
-					{
+					if(deleted) {
 						System.out.println("File has been deleted: " + myFile.getName());
 					}
-					else
-					{
+					else {
 						System.out.println("Problem while deleting the file");
 					}
 				}
-				else
-				{
+				else {
 					System.out.println("File doesn't exist");
 				}
 				break;

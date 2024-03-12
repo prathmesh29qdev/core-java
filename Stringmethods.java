@@ -1,15 +1,6 @@
 import java.util.Scanner;
 
 public class Stringmethods {
-
-//	public char stringFunc(String sampleString)
-//	{
-//		char resultString;
-//		resultString = sampleString.charAt(0);
-//		
-//		return resultString;
-//		
-//	}
 	
 	public static void main(String[] args) {
 		
@@ -22,19 +13,15 @@ public class Stringmethods {
 		System.out.println("Enter element position you want to extract starting from 1");
 		int index  = sc.nextInt();
 				
-		if(index > (string1.length()+2))
-		{
+		if(index > (string1.length()+2)) {
 			System.out.println("does not exist");
 		}
-		else
-		{
+		else {
 			char element =  string1.charAt(index-1);
 			System.out.println("the character at this position is: " + element );
 		}
 		
-		
 		System.out.println("String 2 is : " + string2);
-		
 		System.out.println("Concatenated string is  " + string1.concat(string2));
 		
 		boolean string3  = string1.equals(string2);
@@ -45,7 +32,6 @@ public class Stringmethods {
 			System.out.println("Strings are not equal" );
 		
 	    System.out.println("Converted to uppercase: " + string1.toUpperCase());
-	    
 	    System.out.println("Contains() function in String to check if string contains io: " +(string1.contains("io")));
 	    
 	    //Replace function
@@ -62,5 +48,4 @@ public class Stringmethods {
         System.out.println("Without Trim function in String: " +str);
         System.out.println("Trim function in String:" +(str.trim()));
 	}
-
 }

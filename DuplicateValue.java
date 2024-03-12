@@ -12,19 +12,17 @@ public class DuplicateValue {
 	public static void main(String[] args) {
 		
 		ArrayList<Character> duplicate = new ArrayList<Character>();
-		try (Scanner sc = new Scanner(System.in)) {
+		Scanner sc = new Scanner(System.in);
 			System.out.println("Enter 7 characters in the list");
 			
-			for(int i=0;i<7;i++)
-			{
+			for(int i=0;i<7;i++) {
 				char value = sc.next().charAt(0);
 				duplicate.add(value);
 			}
-		}
+		
 		removeDuplicates(duplicate);
 		
-		for(char index : duplicate)
-		{
+		for(char index : duplicate) {
 			System.out.println(index);
 		}
 	}
@@ -34,33 +32,15 @@ public class DuplicateValue {
 		Set<Character> filteredSet = new HashSet<Character>();
 		Iterator<Character> iterator = charList.iterator();
 		
-		while(iterator.hasNext())
-		{
+		while(iterator.hasNext()) {
 			char currentChar = iterator.next();
-			if(filteredSet.contains(currentChar))
-			{
+			if(filteredSet.contains(currentChar)) {
 				iterator.remove();
 			}
-			else
-			{
+			else {
 				filteredSet.add(currentChar);
 			}
 		}
-		
-//		while(index < charList.size())
-//		{
-//			char currentChar = charList.get(index);
-//			System.out.println(currentChar + " " + index);
-//			if(filteredSet.contains(currentChar))
-//			{
-//				charList.remove(index);
-//			}
-//			else
-//			{
-//				filteredSet.add(currentChar);
-//			}
-//			index++;
-//		}
 	}
 
 }

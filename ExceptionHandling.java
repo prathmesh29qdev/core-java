@@ -2,20 +2,16 @@ package projects;
 
 import java.util.Scanner;
 
-class Division
-{
-	//throws Arithmetic Exceotion
-	void divide(float num1, float num2) throws ArithmeticException
-	{
+class Division {
+	//throws Arithmetic Exception
+	void divide(float num1, float num2) throws ArithmeticException {
 		float a,b;
 		a = num1;
 		b = num2;
-		if(b<=0)
-		{
+		if(b<=0) {
 			throw new ArithmeticException("The divisor cannot be zero");
 		}
-		else
-		{
+		else {
 			float num3 = a/b;
 			System.out.println("answer is : " + num3);
 		}
@@ -24,28 +20,22 @@ class Division
 
 public class ExceptionHandling {
 
-	static void help()
-	{
-		try
-		{
+	static void help() {
+		try {
 			throw new NullPointerException("error thrown");
 		}
-		catch(NullPointerException e)
-		{
+		catch(NullPointerException e) {
 			System.out.println("Caught in help()");
 			throw e;
 		}
 	}
 	
 	//throws Arithmetic Exception
-	static void checkAge(int age) throws ArithmeticException
-	{
-		if(age<18)
-		{
+	static void checkAge(int age) throws ArithmeticException {
+		if(age<18) {
 			throw new ArithmeticException("Access denied below 18 years");
 		}
-		else
-		{
+		else {
 			System.out.println("You're authorized");
 		}
 	
@@ -59,32 +49,26 @@ public class ExceptionHandling {
 
 		Division division = new Division();
 		
-		try
-		{
+		try {
 			division.divide(number1, number2);
 		}
-		catch(ArithmeticException e)
-		{
+		catch(ArithmeticException e) {
 			System.out.println("Divisor should be greater than zero");
 			System.out.println(e);
 		}
-		finally
-		{
+		finally {
 			System.out.println("This is the finally block");
 		}
 		
-		try 
-		{
+		try {
             help();
         }
-        catch (NullPointerException e) 
-		{
+        catch (NullPointerException e) {
             System.out.println(
                 "Caught in main error name given below:");
             System.out.println(e);
         }
 		System.out.println("Enter your age:");
-		Scanner ageInput = new Scanner(System.in);
 		int age  = sc.nextInt();
 		checkAge(age);
 	}

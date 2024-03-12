@@ -29,15 +29,12 @@ public class FileHandling {
 			System.out.println("not able to write in file");
 			e.printStackTrace();
 		}
-//		File myFile = new File("myTestFile.txt");
 		
 		//read the file
-		try 
-		{
+		try {
 			Scanner sc = new Scanner(myFile);
 			
-			while(sc.hasNextLine())
-			{
+			while(sc.hasNextLine()) {
 				String line = sc.nextLine();
 				System.out.println(line);
 			}
@@ -48,12 +45,10 @@ public class FileHandling {
 		}
 		
 		//file deleting
-		if(myFile.delete())
-		{
+		if(myFile.delete()) {
 			System.out.println("File has been deleted: " + myFile.getName());
 		}
-		else
-		{
+		else {
 			System.out.println("Problem while deleting the file");
 		}
 	} 

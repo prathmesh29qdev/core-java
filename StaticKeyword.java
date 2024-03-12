@@ -6,15 +6,14 @@ class Student
 	
 	 static void change(){  
 	     college = "BITS Varnama";  
-	     }  
+	 }  
 	 
     Student(int r, String n){  
     rollno = r;  
     name = n;  
     }  
     
-    void display()
-    {
+    void display() {
     	System.out.println("rollno: " + rollno + " name: " + name + " college: " + college);
     }
 }
@@ -28,7 +27,6 @@ public class StaticKeyword {
 	}	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Student.change();
 		Student std = new Student(11,"Sam");

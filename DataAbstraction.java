@@ -1,21 +1,14 @@
-
-abstract class App
-{
-
+abstract class App {
 	abstract void login();
-	void username()
-	{
+	void username() {
 		System.out.println("Username is public");
 	}
 }
 
-class Password extends App
-{
-	void login() 
-	{
+class Password extends App {
+	void login() {
 		System.out.println("Password is private");
 	}
-	
 }
 
 
@@ -27,5 +20,4 @@ public class DataAbstraction {
 		password.username();
 		password.login();
 	}
-
 }
