@@ -1,6 +1,7 @@
 package projects;
 
 import java.io.File;
+import java.io.FileFilter;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -42,31 +43,44 @@ public class FIleHandling2 {
 			switch(option) {
 			case 1:
 				//writing in file
-				System.out.println("Enter a string you want to write in the file.");
-				String write = sc.nextLine();
-				try {
-					FileWriter fileWriter = new FileWriter(fileName);
-					fileWriter.write(write);
-					fileWriter.close();
-					System.out.println(myFile.getName() + " File has been written.");
-				} catch (IOException e) {
-					System.out.println("not able to write in file");
-					e.printStackTrace();
+				if(myFile.exists()) {
+					System.out.println("Enter a string you want to write in the file.");
+					String write = sc.nextLine();
+					try {
+						FileWriter fileWriter = new FileWriter(fileName);
+						fileWriter.write(write);
+						fileWriter.close();
+						System.out.println(myFile.getName() + " File has been written.");
+					} catch (IOException e) {
+						System.out.println("not able to write in file");
+						e.printStackTrace();
+					}
+				}
+				else {
+					System.out.println("File not present");
+					shouldContinue = false;
 				}
 				break;
 			case 2:
 				//read the file
-				try {
-					Scanner re = new Scanner(myFile);
+				if(myFile.exists()) {
+					try {
+						Scanner re = new Scanner(myFile);
 					
-					while(re.hasNextLine()) {
-						String line = re.nextLine();
-						System.out.println(line);
+						while(re.hasNextLine()) {
+							String line = re.nextLine();
+							System.out.println(line);
+						}
+						re.close();
+					} 
+					catch (FileNotFoundException e) {
+						System.out.println("file can't be read");
+						e.printStackTrace();
 					}
-				} 
-				catch (FileNotFoundException e) {
-					System.out.println("file can't be read");
-					e.printStackTrace();
+				}
+				else {
+					System.out.println("File not present");
+					shouldContinue = false;
 				}
 				break;
 			case 3:
