@@ -6,24 +6,27 @@ import java.util.Scanner;
  * And also checks age above 18 to access the website if not then throws exception.
  */
 class Division {
+	
 	//throws Arithmetic Exception
 	void divide(float num1, float num2) throws ArithmeticException {
 		float a, b;
 		a = num1;
 		b = num2;
-		if(b == 0) {
+		if (b == 0) {
 			throw new ArithmeticException("The divisor cannot be zero");
 		} else {
 			float num3 = a/b;
 			System.out.println("answer is : " + num3);
 		}
 	}
+	
 }
 
 /**
  * Exception is thrown to demonstrate the use of throw keyword.
  */
 public class ExceptionHandling {
+	
 	static void help() {
 		try {
 			throw new NullPointerException("error thrown");
@@ -73,4 +76,5 @@ public class ExceptionHandling {
 		int age  = sc.nextInt();
 		checkAge(age);
 	}
+	
 }

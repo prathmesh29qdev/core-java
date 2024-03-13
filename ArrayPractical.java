@@ -6,6 +6,7 @@ import java.util.Scanner;
  * This program demonstrates the use of arrays.
  */
 public class ArrayPractical {
+	
 	public static void main(String[] args) {
 		int[] values = new int[10];
 		System.out.println("Enter 10 values to store in an array");
@@ -27,9 +28,10 @@ public class ArrayPractical {
 		 * This loop is used to find the index position of the array element entered by user
 		 */
 		for (int i = 0 ; i < 10 ; i++) {
-			if(values[i] == element) {
+			if (values[i] == element) {
 				System.out.println("Position: " + i);
 			}
 		}
 	}
+	
 }

@@ -9,6 +9,7 @@ import java.util.Scanner;
  * This program shows the file handling methods to read, write, delete and create a file.
  */
 public class FileHandling {
+	
 	public static void main(String[] args) {
 		File myFile = new File("myTestFile.txt");
 		//creating a file
@@ -52,4 +53,5 @@ public class FileHandling {
 			System.out.println("Problem while deleting the file");
 		}
 	}
+	
 }

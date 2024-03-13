@@ -9,6 +9,7 @@ import java.util.Comparator;
  * This program demonstrate the use of Comparable and Comparator and compares the values.
  */
 class Student implements Comparable<Student> {
+	
 	int age;
 	String name;
 	public Student(int age, String name) {
@@ -30,6 +31,7 @@ class Student implements Comparable<Student> {
 			return -1;
 		}
 	}
+	
 }
 
 /**
@@ -37,6 +39,7 @@ class Student implements Comparable<Student> {
  * Comparator and Comparable.
  */
 public class ComparableAndComparator {
+	
 	public static void main(String[] args) {
 		//comparator function
 		Comparator<Student> com = new Comparator<Student>() {
@@ -64,4 +67,5 @@ public class ComparableAndComparator {
 			System.out.println(s);
 		}
 	}
+	
 }

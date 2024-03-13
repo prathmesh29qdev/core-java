@@ -8,6 +8,7 @@ import java.util.Scanner;
  * This program implements the concept of List and takes values from user and displays the content.
  */
 public class ListPractical {
+	
 	public static void main(String[] args) {
 		//iterator
 		int i=0;
@@ -36,4 +37,5 @@ public class ListPractical {
 			System.out.println("Value at index " + i + " is " + values.get(i));
 		}
 	}
+	
 }

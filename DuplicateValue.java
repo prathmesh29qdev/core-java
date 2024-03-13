@@ -11,6 +11,7 @@ import java.util.Set;
  * This programs removes the duplicate values from the list
  */
 public class DuplicateValue {
+	
 	public static void main(String[] args) {
 		ArrayList<Character> duplicate = new ArrayList<Character>();
 		Scanner sc = new Scanner(System.in);
@@ -48,4 +49,5 @@ public class DuplicateValue {
 			}
 		}
 	}
+	
 }

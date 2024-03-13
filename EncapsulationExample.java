@@ -3,6 +3,7 @@ package projects;
  * This program demonstrates the concept of Encapsulation by accessing the methods through objects.
  */
 class EncapsulatedClass {
+	
 	int age;
 	String name;
 	String hobby;
@@ -26,10 +27,12 @@ class EncapsulatedClass {
 	public void setHobby(String hobby) {
 		this.hobby = hobby;
 	}
+	
 }
 
  //variables and methods are encapsulated in the class and can only be accessed by its object using methods.
 public class EncapsulationExample {
+	
 	public static void main(String[] args) {
 		EncapsulatedClass encapsulatedClass =  new EncapsulatedClass();
 		encapsulatedClass.setAge(23);
@@ -37,4 +40,5 @@ public class EncapsulationExample {
 		encapsulatedClass.setHobby("Singing");
 		System.out.println(encapsulatedClass.getName() + " " + encapsulatedClass.getAge() + " " + encapsulatedClass.getHobby());
 	}
+	
 }
