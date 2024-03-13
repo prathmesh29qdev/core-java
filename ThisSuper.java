@@ -1,5 +1,6 @@
 /**
- * This program demonstrates the use of 'this' and 'super' keyword
+ * This program demonstrates the use of 'this' and 'super' keyword.
+ * And this class sets the value of the Car details like age,name,model and price.
  */
 class Car {
 	String model = "XUV";
@@ -45,7 +46,7 @@ class Car {
 }
 
 /**
- * This class demonstrates inheritance.
+ * This class demonstrates inheritance and extends Car to use the super keyword to access the parent's properties.
  */
 public class ThisSuper extends Car {
 	/**

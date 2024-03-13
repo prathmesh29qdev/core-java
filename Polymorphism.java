@@ -21,30 +21,38 @@ class Bikes {
 }
 
 //Runtime Polymorphism
+/**
+ * This class implements a method paint().
+ */
 class Colors {
 	void paint() {
 		System.out.println("All colors will be used in the painting");
 	}
 }
 
+/**
+ * This class extends colors and shows single level inheritance.
+ */
 class Blue extends Colors {
 	void paint() {
 		System.out.println("BLUE color will be used in the painting");
 	}
 }
 
+/**
+ * This class extends colors and shows single level inheritance.
+ */
 class Black extends Colors {
 	void paint() {
 		System.out.println("BLACK color will be used in the painting");
 	}
 }
 
+/**
+ * This class shows the concept of polymorphism by calling the methods of the above classes that implement
+ * method overloading and overriding.
+ */
 public class Polymorphism {
-	 /**
-     * The main method of the program.
-     * 
-     * @param args The command-line arguments (not used in this program)
-     */
 	public static void main(String[] args) {
 		//Compiletime Polymorphism
 		Bikes bikes = new Bikes();
@@ -54,7 +62,7 @@ public class Polymorphism {
 		System.out.println("High end bike is " + highEndBike);
 		System.out.println("Normal bike is " + commuterBike);
 		
-		//Runtime Polymorphism'
+		//Runtime Polymorphism
 		Colors color = new Black();
 		color.paint();
 		

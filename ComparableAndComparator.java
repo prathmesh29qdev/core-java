@@ -29,9 +29,13 @@ class Student implements Comparable<Student> {
 		} else {
 			return -1;
 		}
-	}	
+	}
 }
 
+/**
+ * This class implements comparator and also calls the sort function using both the 
+ * Comparator and Comparable.
+ */
 public class ComparableAndComparator {
 	public static void main(String[] args) {
 		//comparator function

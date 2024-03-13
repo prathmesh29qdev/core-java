@@ -59,6 +59,9 @@ class Interceptor extends RoyalEnfield {
 	}
 }
 
+/**
+ * This class makes the object to call methods using it from the above methods.
+ */
 public class Inheritance {
 	/**
      * The main method of the program.

@@ -6,11 +6,6 @@ import java.util.Scanner;
  * for comparing integers, strings and bigDecimal values
  */
 public class DiffernceAndEquals {
-	  /**
-     * The main method of the program.
-     * 
-     * @param args The command-line arguments (not used in this program)
-     */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter two numbers");

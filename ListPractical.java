@@ -1,12 +1,12 @@
 package projects;
 
-/**
- * This program implements the concept of List and takes values from user and displays the content.
- */
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * This program implements the concept of List and takes values from user and displays the content.
+ */
 public class ListPractical {
 	public static void main(String[] args) {
 		//iterator
