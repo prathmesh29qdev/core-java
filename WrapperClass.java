@@ -1,5 +1,7 @@
+/**
+ * This program demonstrates the concept of Wrapper class to compare the objects.
+ */
 public class WrapperClass {
-
 	public static void main(String[] args) {
 		int num = 10;
 		int num2 = 10;
@@ -12,6 +14,10 @@ public class WrapperClass {
 			System.out.println("Objects are not equal");
 		}
 		
+		/**
+		 * values are stored in compareResult and returns if any one of them is 
+		 * greater, smaller or equal
+		 */
 		int compareResult = Integer.compare(num, num2);
 		if(compareResult > 0) {	
 			System.out.println("First number is greater" + compareResult);

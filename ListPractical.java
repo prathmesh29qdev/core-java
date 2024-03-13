@@ -1,5 +1,8 @@
 package projects;
 
+/**
+ * This program implements the concept of List and takes values from user and displays the content.
+ */
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -24,12 +27,12 @@ public class ListPractical {
 		System.out.println("Enter the values now");
 		
 		//taking values
-		for (i = 0; i < numbers; i++) {
+		for (i = 0 ; i < numbers ; i++) {
 				values.add(sc.nextLine());
 		}
 		
 		//displaying values
-		for(i = 0; i < values.size(); i++) {
+		for(i = 0 ; i < values.size() ; i++) {
 			System.out.println("Value at index " + i + " is " + values.get(i));
 		}
 	}

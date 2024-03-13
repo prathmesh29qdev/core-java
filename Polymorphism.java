@@ -1,10 +1,14 @@
 package projects;
 
-//Compile time polymorphism
+/**
+ * This program demonstrates the concept of Compile time and runtime polymorphism by showing 
+ * the execution of concept method overloading and method overriding.
+ */
 class Bikes {
 	int cc;
 	String brand;
 	String bike;
+	//Compile time Polymorphism 
 	String buyBike(int cc, String brand) {
 		bike = "Bullet";
 		return bike;
@@ -36,6 +40,11 @@ class Black extends Colors {
 }
 
 public class Polymorphism {
+	 /**
+     * The main method of the program.
+     * 
+     * @param args The command-line arguments (not used in this program)
+     */
 	public static void main(String[] args) {
 		//Compiletime Polymorphism
 		Bikes bikes = new Bikes();

@@ -1,14 +1,17 @@
 package projects;
 
 import java.util.Scanner;
-
+/**
+ * This program demonstrates the concept of Exception handling when user enters divisor as zero.
+ * And also checks age above 18 to access the website if not then throws exception.
+ */
 class Division {
 	//throws Arithmetic Exception
 	void divide(float num1, float num2) throws ArithmeticException {
 		float a, b;
 		a = num1;
 		b = num2;
-		if(b<=0) {
+		if(b == 0) {
 			throw new ArithmeticException("The divisor cannot be zero");
 		} else {
 			float num3 = a/b;
@@ -17,6 +20,9 @@ class Division {
 	}
 }
 
+/**
+ * Exception is thrown to demonstrate the use of throw keyword.
+ */
 public class ExceptionHandling {
 	static void help() {
 		try {
@@ -56,13 +62,13 @@ public class ExceptionHandling {
 		}
 		
 		try {
-            help();
-        }
-        catch (NullPointerException e) {
-            System.out.println(
-                "Caught in main error name given below:");
-            System.out.println(e);
-        }
+			help();
+		}
+		catch (NullPointerException e) {
+			System.out.println(
+					"Caught in main error name given below:");
+			System.out.println(e);
+		}
 		System.out.println("Enter your age:");
 		int age  = sc.nextInt();
 		checkAge(age);

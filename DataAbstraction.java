@@ -1,3 +1,8 @@
+package projects;
+
+/**
+ * This program demonstrates the use of abstract keyword to access the methods in the class.
+ */
 abstract class App {
 	abstract void login();
 	void username() {
@@ -10,7 +15,6 @@ class Password extends App {
 		System.out.println("Password is private");
 	}
 }
-
 
 public class DataAbstraction {
 	public static void main(String[] args) {

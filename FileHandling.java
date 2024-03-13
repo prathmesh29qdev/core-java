@@ -5,7 +5,9 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-
+/**
+ * This program shows the file handling methods to read, write, delete and create a file.
+ */
 public class FileHandling {
 	public static void main(String[] args) {
 		File myFile = new File("myTestFile.txt");

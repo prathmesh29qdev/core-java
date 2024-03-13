@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * This program demonstrates the usage of HashMap and basic operations on maps.
+ */
 public class MapAndSets {
 	public static void main(String[] args) {
 		HashMap<String, Integer> students  = new HashMap<>();
@@ -21,6 +24,9 @@ public class MapAndSets {
 			System.out.println(students.get(key));
 		}
 		
+		/**
+		 * Checks if the particular value is present in the HashMap and displays it.
+		 */
 		if (students.containsKey("Gagan")) {
 			System.out.print("Yes it is there");
 		} else {

@@ -1,5 +1,6 @@
-import java.util.Scanner;
-
+/**
+ * This program prints simple "Hello World" statement.
+ */
 public class HelloWorld {
 	public static void main(String[] args) {
 		//hello world

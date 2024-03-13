@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/**
+ * This program demonstrate the use of switch case statement and outputs the name of month based 
+ * on the number of month.
+ */
 public class SwitchCase {
 	public static void main(String[] args) {
 		System.out.println("Switch case output:");
@@ -11,41 +15,41 @@ public class SwitchCase {
 				System.out.println("January"); 
 				break;
 			case 2:
-	            System.out.println("Feb"); 
-	            break;
+				System.out.println("Feb"); 
+				break;
 			case 3:
-	            System.out.println("Mar"); 
-	            break;
+				System.out.println("Mar"); 
+				break;
 			case 4:
-	            System.out.println("Apr"); 
-	            break;
+				System.out.println("Apr"); 
+				break;
 			case 5:
-	            System.out.println("May"); 
-	            break;
+				System.out.println("May"); 
+				break;
 			case 6:
-	            System.out.println("Jun"); 
-	            break;
+				System.out.println("Jun"); 
+				break;
 			case 7:
-	            System.out.println("July"); 
-	            break;
+				System.out.println("July"); 
+				break;
 			case 8:
-	            System.out.println("Aug"); 
-	            break;
+				System.out.println("Aug"); 
+				break;
 			case 9:
-	            System.out.println("Sept"); 
-	            break;
+				System.out.println("Sept"); 
+				break;
 			case 10:
-	            System.out.println("Oct"); 
-	            break;
+				System.out.println("Oct"); 
+				break;
 			case 11:
-	            System.out.println("Nov"); 
-	            break;
+				System.out.println("Nov"); 
+				break;
 			case 12:
-	            System.out.println("Dec"); 
-	            break;    
+				System.out.println("Dec"); 
+				break;    
 			default:
-	            System.out.println("Not a valid month"); 
-	            break;
+				System.out.println("Not a valid month"); 
+				break;
 		}
 		System.out.println();
 	}

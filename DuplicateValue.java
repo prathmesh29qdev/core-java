@@ -7,13 +7,19 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
+/**
+ * This programs removes the duplicate values from the list
+ */
 public class DuplicateValue {
 	public static void main(String[] args) {
 		ArrayList<Character> duplicate = new ArrayList<Character>();
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter 7 characters in the list");
-			
-		for (int i = 0;i < 7;i++) {
+		
+		/**
+		 * taking input in the list
+		 */
+		for (int i = 0 ; i < 7 ; i++) {
 			char value = sc.next().charAt(0);
 			duplicate.add(value);
 		}
@@ -25,6 +31,10 @@ public class DuplicateValue {
 		}
 	}
 
+	/**
+	 * This method takes a list as input and removes the duplicate values from it.
+	 * @param charList
+	 */
 	private static void removeDuplicates(List<Character> charList) {
 		Set<Character> filteredSet = new HashSet<Character>();
 		Iterator<Character> iterator = charList.iterator();
