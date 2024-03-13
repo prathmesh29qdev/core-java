@@ -4,6 +4,7 @@ import java.util.Scanner;
  * This program demonstrates the use of if..else conditional statements
  */
 public class IfElsePractical {
+	
 	public static void main(String[] args) {
 		System.out.println("If..else output:");
 		System.out.println("Enter a number for age");
@@ -18,4 +19,5 @@ public class IfElsePractical {
 			System.out.println("Old");
 		}
 	}
+	
 }

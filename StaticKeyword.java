@@ -2,6 +2,7 @@
  * This program demonstrates the use of static keyword
  */
 public class StaticKeyword {
+	
 	static int count;
 	/**
 	 * initializes the object
@@ -26,12 +27,14 @@ public class StaticKeyword {
 		std1.display();
 		std3.display();
 	}
+
 }
 
 /**
  * This class represents the student details like roll number, name and college name
  */
 class Student {
+	
 	int rollno;
 	String name;
 	static String college = "BITS"; //this is the default college for all students that's why declared static
@@ -54,4 +57,5 @@ class Student {
 	void display() {
 		System.out.println("rollno: " + rollno + " name: " + name + " college: " + college);
 	}
+	
 }

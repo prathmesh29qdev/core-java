@@ -2,6 +2,7 @@
  * This program demonstrates the concept of Wrapper class to compare the objects.
  */
 public class WrapperClass {
+	
 	public static void main(String[] args) {
 		int number = 10;
 		int number2 = 10;
@@ -19,12 +20,13 @@ public class WrapperClass {
 		 * greater, smaller or equal
 		 */
 		int compareResult = Integer.compare(number, number2);
-		if(compareResult > 0) {	
+		if (compareResult > 0) {	
 			System.out.println("First number is greater" + compareResult);
-		} else if(compareResult < 0) {
+		} else if (compareResult < 0) {
 			System.out.println("Second number is greater" + compareResult);
 		} else {
 			System.out.println("Values are equal " + compareResult);
 		}
 	}
+	
 }

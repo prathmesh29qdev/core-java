@@ -5,6 +5,7 @@ import java.util.Scanner;
  *
  */
 public class EmiCalculator {
+
 	/**
      * Calculates the EMI (Equated Monthly Installment) for a loan.
      * 
@@ -29,12 +30,13 @@ public class EmiCalculator {
 	public static void main(String[] args) {
 		float emi, rate, time;
 		System.out.println("Enter amount of the product");
-		Scanner myObj = new Scanner(System.in);
-		float principalAmount = myObj.nextFloat();
+		Scanner scanner = new Scanner(System.in);
+		float principalAmount = scanner.nextFloat();
 		rate = 9; //rate of interest
 		time = 12; // time in months (loan tenure)
 		EmiCalculator emiCalculator = new EmiCalculator();
 		emi = emiCalculator.emiCalc(principalAmount, rate, time);
 		System.out.println("The EMI for 12 months is:" + emi);
 	}
+	
 }

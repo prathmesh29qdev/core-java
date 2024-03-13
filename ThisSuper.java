@@ -3,6 +3,7 @@
  * And this class sets the value of the Car details like age,name,model and price.
  */
 class Car {
+	
 	String model = "XUV";
 	double price = 77.88;
 
@@ -43,12 +44,14 @@ class Car {
 		name = this.name;
 		System.out.println(name);
 	}
+	
 }
 
 /**
  * This class demonstrates inheritance and extends Car to use the super keyword to access the parent's properties.
  */
 public class ThisSuper extends Car {
+	
 	/**
 	 * This function sets the value of model and price using super keyword.
 	 */
@@ -64,4 +67,5 @@ public class ThisSuper extends Car {
 		car.setAge(5);
 		car.setName("Honda");
 	}
+	
 }

@@ -4,6 +4,7 @@ import java.util.Scanner;
  * This program demonstrates the use of different string methods
  */
 public class Stringmethods {
+	
 	/**
      * The main method of the program.
      * 
@@ -54,4 +55,5 @@ public class Stringmethods {
 		System.out.println("Without Trim function in String: " +str);
 		System.out.println("Trim function in String:" +(str.trim()));
 	}
+	
 }

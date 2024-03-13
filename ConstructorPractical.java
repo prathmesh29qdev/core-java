@@ -4,6 +4,7 @@ import java.util.Scanner;
  * This program demonstrates the concept of Constructors.
  */
 public class ConstructorPractical {
+	
 	/**
 	 * This is a default constructor.
 	 */
@@ -35,4 +36,5 @@ public class ConstructorPractical {
 		int result = constructorPractical.ConstructorPractical(num1, num2);
 		System.out.println("result is:" + result);
 	}
+
 }

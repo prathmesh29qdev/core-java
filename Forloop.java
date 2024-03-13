@@ -2,6 +2,7 @@
  * This program demonstrates the use of For Loops.
  */
 public class Forloop {
+	
 	public static void main(String[] args) {
 		//for loop
 		int i = 0, j = 0;
@@ -12,5 +13,6 @@ public class Forloop {
 			System.out.println();
 		}
 	}
+	
 }
  	

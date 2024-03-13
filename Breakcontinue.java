@@ -2,6 +2,7 @@
  * This program demonstrates the usage of the break and continue statements using for loop.
  */
 public class BreakContinue {
+	
 	 /**
      * The main method of the program.
      * 
@@ -23,4 +24,5 @@ public class BreakContinue {
 			System.out.print(" " + number);
 		}
 	}
+
 }
