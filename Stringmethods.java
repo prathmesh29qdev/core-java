@@ -1,32 +1,27 @@
 import java.util.Scanner;
 
 public class Stringmethods {
-	
 	public static void main(String[] args) {
-		
 		System.out.println("Enter the string you wnat to perform operations on");
 		Scanner sc = new Scanner(System.in);
 		String string1  = sc.nextLine();
-		
-		String string2 = new String("hehe");
+		String string2 = new String("Apple");
 		
 		System.out.println("Enter element position you want to extract starting from 1");
 		int index  = sc.nextInt();
 				
-		if(index > (string1.length()+2)) {
-			System.out.println("does not exist");
-		}
-		else {
+		if (index > (string1.length()+2)) {
+			System.out.println("Does not exist");
+		} else {
 			char element =  string1.charAt(index-1);
-			System.out.println("the character at this position is: " + element );
+			System.out.println("The character at this position is: " + element );
 		}
 		
 		System.out.println("String 2 is : " + string2);
 		System.out.println("Concatenated string is  " + string1.concat(string2));
-		
 		boolean string3  = string1.equals(string2);
 		
-		if(string3 == true)
+		if (string3 == true)
 			System.out.println("Strings are equal" );
 		else 
 			System.out.println("Strings are not equal" );

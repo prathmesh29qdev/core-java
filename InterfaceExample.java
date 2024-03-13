@@ -17,7 +17,6 @@ interface Interface2 extends API {
 }
 
 public class InterfaceExample implements Interface1,Interface2 {
-
 	@Override
 	public void print() {
 		System.out.println("Display from Interface2");
@@ -32,7 +31,7 @@ public class InterfaceExample implements Interface1,Interface2 {
 	
 	@Override
 	public void fun() {
-		System.out.println("fun method");
+		System.out.println("Fun method");
 		
 	}
 	

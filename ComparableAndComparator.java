@@ -17,26 +17,22 @@ class Student implements Comparable<Student> {
 		return "Student [age=" + age + ", name=" + name + "]";
 	}
 
-	
 	public int compareTo(Student that) {
-		if(this.age > that.age) {
+		if (this.age > that.age) {
 			return 1;
-		}
-		else {
+		} else {
 			return -1;
 		}
 	}	
 }
 
 public class ComparableAndComparator {
-
 	public static void main(String[] args) {
-	
 		//comparator function
 		Comparator<Student> com = new Comparator<Student>() {
 			
 			public int compare(Student i, Student j) {
-				if(i.age > j.age) {
+				if (i.age > j.age) {
 					return 1;
 				}
 				else {
@@ -55,10 +51,8 @@ public class ComparableAndComparator {
 		Collections.sort(list,com); //comparator compares list with comparator
 		Collections.sort(list); // comparable (while executing this code, make one of these statement comment
 		
-		for(Student s: list) {
+		for (Student s : list) {
 			System.out.println(s);
 		}
-		
 	}
-
 }

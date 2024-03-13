@@ -5,9 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ListPractical {
-
 	public static void main(String[] args) {
-		
 		//iterator
 		int i=0;
 		
@@ -19,19 +17,19 @@ public class ListPractical {
 		System.out.println("Enter the number of strings you want to add");
 		int numbers = sc.nextInt();
 		
-		if(numbers >=1) {
+		if (numbers >= 1) {
 			sc.nextLine();			
 		}
 		
 		System.out.println("Enter the values now");
 		
 		//taking values
-		for(i=0;i<numbers;i++) {
+		for (i = 0; i < numbers; i++) {
 				values.add(sc.nextLine());
 		}
 		
 		//displaying values
-		for(i=0;i<values.size();i++) {
+		for(i = 0; i < values.size(); i++) {
 			System.out.println("Value at index " + i + " is " + values.get(i));
 		}
 	}

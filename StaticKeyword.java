@@ -1,5 +1,4 @@
-class Student
-{
+class Student {
 	int rollno;
 	String name;
 	static String college = "BITS";
@@ -19,15 +18,13 @@ class Student
 }
 
 public class StaticKeyword {
-
 	static int count;
 	public StaticKeyword(){  
 	count++; 
 	System.out.println(count); 
 	}	
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {	
 		Student.change();
 		Student std = new Student(11,"Sam");
 		Student std1 = new Student(12,"Pen");
@@ -36,6 +33,5 @@ public class StaticKeyword {
 		std.display();
 		std1.display();
 		std3.display();
-		
 	}
 }

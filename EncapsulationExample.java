@@ -1,5 +1,4 @@
-class EncapsulatedClass
-{
+class EncapsulatedClass {
 	int age;
 	String name;
 	String hobby;
@@ -28,16 +27,11 @@ class EncapsulatedClass
 }
  //variables and methods are encapsulated in the class and can only be accessed by its object using methods.
 public class EncapsulationExample {
-
 	public static void main(String[] args) {
-		
 		EncapsulatedClass encapsulatedClass =  new EncapsulatedClass();
 		encapsulatedClass.setAge(23);
 		encapsulatedClass.setName("Himesh");
-		encapsulatedClass.setHobby("singing");
-		
+		encapsulatedClass.setHobby("Singing");
 		System.out.println(encapsulatedClass.getName() + " " + encapsulatedClass.getAge() + " " + encapsulatedClass.getHobby());
-
 	}
-
 }

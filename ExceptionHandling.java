@@ -5,13 +5,12 @@ import java.util.Scanner;
 class Division {
 	//throws Arithmetic Exception
 	void divide(float num1, float num2) throws ArithmeticException {
-		float a,b;
+		float a, b;
 		a = num1;
 		b = num2;
 		if(b<=0) {
 			throw new ArithmeticException("The divisor cannot be zero");
-		}
-		else {
+		} else {
 			float num3 = a/b;
 			System.out.println("answer is : " + num3);
 		}
@@ -19,7 +18,6 @@ class Division {
 }
 
 public class ExceptionHandling {
-
 	static void help() {
 		try {
 			throw new NullPointerException("error thrown");
@@ -32,13 +30,11 @@ public class ExceptionHandling {
 	
 	//throws Arithmetic Exception
 	static void checkAge(int age) throws ArithmeticException {
-		if(age<18) {
+		if (age < 18) {
 			throw new ArithmeticException("Access denied below 18 years");
-		}
-		else {
+		} else {
 			System.out.println("You're authorized");
 		}
-	
 	}
 	
 	public static void main(String[] args) {
@@ -48,7 +44,6 @@ public class ExceptionHandling {
 		float number2 = sc.nextInt();
 
 		Division division = new Division();
-		
 		try {
 			division.divide(number1, number2);
 		}

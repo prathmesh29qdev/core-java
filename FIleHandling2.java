@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class FIleHandling2 {
-
 	public static void main(String[] args) {
 		String fileName = "myTestFile3";
 		File myFile = new File(fileName);
@@ -23,15 +22,15 @@ public class FIleHandling2 {
 		}
 		
 		if (myFile.canExecute()) {
-	        System.out.println("File is executable");
-	    } else {
+			System.out.println("File is executable");
+		} else {
 	        System.out.println("File is not executable");
-	    }
-	        
+		}
+		
 		Scanner sc = new Scanner(System.in);
 		boolean shouldContinue = true;
 		
-		while(shouldContinue) {
+		while (shouldContinue) {
 			System.out.println("Enter number according to the option you want to chose");
 			System.out.println("1 for entering string in the file.");
 			System.out.println("2 for reading the file.");
@@ -40,7 +39,7 @@ public class FIleHandling2 {
 			int option = sc.nextInt();
 			sc.nextLine();
 			
-			switch(option) {
+			switch (option) {
 			case 1:
 				//writing in file
 				if(myFile.exists()) {
@@ -55,8 +54,7 @@ public class FIleHandling2 {
 						System.out.println("not able to write in file");
 						e.printStackTrace();
 					}
-				}
-				else {
+				} else {
 					System.out.println("File not present");
 					shouldContinue = false;
 				}
@@ -77,8 +75,7 @@ public class FIleHandling2 {
 						System.out.println("file can't be read");
 						e.printStackTrace();
 					}
-				}
-				else {
+				} else {
 					System.out.println("File not present");
 					shouldContinue = false;
 				}
@@ -90,12 +87,10 @@ public class FIleHandling2 {
 					boolean deleted = myFile.delete();
 					if(deleted) {
 						System.out.println("File has been deleted: " + myFile.getName());
-					}
-					else {
+					} else {
 						System.out.println("Problem while deleting the file");
 					}
-				}
-				else {
+				} else {
 					System.out.println("File doesn't exist");
 				}
 				break;

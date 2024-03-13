@@ -7,15 +7,14 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class FileHandling {
-
 	public static void main(String[] args) {
 		File myFile = new File("myTestFile.txt");
 		//creating a file
 		try {
 			myFile.createNewFile();
-			System.out.println("file creacted");
+			System.out.println("File creacted");
 		} catch (IOException e) {
-			System.out.println("file not created");
+			System.out.println("File not created");
 			e.printStackTrace();
 		}
 		
@@ -26,7 +25,7 @@ public class FileHandling {
 			fileWriter.close();
 			System.out.println("File has been written.");
 		} catch (IOException e) {
-			System.out.println("not able to write in file");
+			System.out.println("Not able to write in file");
 			e.printStackTrace();
 		}
 		
@@ -40,17 +39,15 @@ public class FileHandling {
 			}
 		} 
 		catch (FileNotFoundException e) {
-			System.out.println("file can't be read");
+			System.out.println("File can't be read");
 			e.printStackTrace();
 		}
 		
 		//file deleting
-		if(myFile.delete()) {
+		if (myFile.delete()) {
 			System.out.println("File has been deleted: " + myFile.getName());
-		}
-		else {
+		} else {
 			System.out.println("Problem while deleting the file");
 		}
-	} 
-
+	}
 }

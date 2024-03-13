@@ -13,9 +13,7 @@ class Password extends App {
 
 
 public class DataAbstraction {
-
 	public static void main(String[] args) {
-		
 		Password password = new Password();
 		password.username();
 		password.login();

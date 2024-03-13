@@ -27,8 +27,7 @@ class Car {
 }
 
 public class ThisSuper extends Car {
-	
-//	class BMW extends Car
+	//	class BMW extends Car
 	void func() {
 		super.model = "SUV";
 		super.price = 100;

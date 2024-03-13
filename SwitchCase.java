@@ -1,10 +1,8 @@
 import java.util.Scanner;
 
 public class SwitchCase {
-
 	public static void main(String[] args) {
-		
-		System.out.println("switch case output:");
+		System.out.println("Switch case output:");
 		System.out.println("Enter number of month:");
 		Scanner sc = new Scanner(System.in);
 		int month = sc.nextInt();

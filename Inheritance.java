@@ -37,9 +37,7 @@ class Interceptor extends RoyalEnfield {
 }
 
 public class Inheritance {
-
 	public static void main(String[] args) {
-		
 		Interceptor interceptor = new Interceptor();
 		interceptor.vehicleClass();
 		interceptor.bikeClass();

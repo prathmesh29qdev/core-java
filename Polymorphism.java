@@ -19,7 +19,7 @@ class Bikes {
 //Runtime Polymorphism
 class Colors {
 	void paint() {
-		System.out.println("all colors will be used in the painting");
+		System.out.println("All colors will be used in the painting");
 	}
 }
 
@@ -36,9 +36,7 @@ class Black extends Colors {
 }
 
 public class Polymorphism {
-
 	public static void main(String[] args) {
-
 		//Compiletime Polymorphism
 		Bikes bikes = new Bikes();
 		String commuterBike = bikes.buyBike(100);
