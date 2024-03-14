@@ -18,7 +18,7 @@ public class IfElsePractical {
 		Scanner scanner = new Scanner(System.in);
 		int age = scanner.nextInt();
 
-		if (age <= 25){
+		if (age <= 25) {
 			System.out.println("Young");
 		} else if (age > 25 && age <= 60) {
 			System.out.println("Middle aged");

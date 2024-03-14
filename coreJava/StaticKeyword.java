@@ -14,7 +14,7 @@ public class StaticKeyword {
 	/**
 	 * initializes the object
 	 */
-	public StaticKeyword(){
+	public StaticKeyword() {
 		count++; 
 		System.out.println(count);
 	}
@@ -41,7 +41,7 @@ class Student {
 	String name;
 	static String college = "BITS"; //this is the default college for all students that's why declared static
 
-	static void change(){  
+	static void change() {  
 		college = "BITS Varnama";  //changing the college name for all students
 	}
 
@@ -51,7 +51,7 @@ class Student {
 	 * @param roll The roll number of the student
 	 * @param nameOfStudent is the name of the student
 	 */
-	Student(int roll, String nameOfStudent){
+	Student(int roll, String nameOfStudent) {
 		rollno = roll;
 		name = nameOfStudent;
 	}

@@ -20,7 +20,7 @@ public class SetsPractical {
 		Scanner scanner = new Scanner(System.in);
 		int numberOfElement = scanner.nextInt();
 
-		System.out.println("Enter " + " numbers to add in set");
+		System.out.println("Enter numbers to add in set");
 		for (int i = 0 ; i < numberOfElement ; i++) {
 			set.add(scanner.nextInt());
 		}
