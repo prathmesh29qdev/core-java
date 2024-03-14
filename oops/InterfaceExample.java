@@ -16,12 +16,12 @@ interface API {
 
 interface Interface1 extends API {
 	void show();
-	void fun();
+	void notShow();
 }
 
 interface Interface2 extends API {
 	void print();
-	void fun();
+	void notShow();
 }
 
 /**
@@ -40,8 +40,8 @@ public class InterfaceExample implements Interface1,Interface2 {
 	}
 
 	@Override
-	public void fun() {
-		System.out.println("Fun method");
+	public void notShow() {
+		System.out.println("In notShow method");
 	}
 
 	public static void main(String[] args) {
@@ -49,7 +49,7 @@ public class InterfaceExample implements Interface1,Interface2 {
 		interfaceExample.display();
 		interfaceExample.show();
 		interfaceExample.print();
-		interfaceExample.fun();
+		interfaceExample.notShow();
 	}
 
 }

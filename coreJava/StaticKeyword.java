@@ -21,9 +21,9 @@ public class StaticKeyword {
 
 	public static void main(String[] args) {
 		Student.change();
-		Student studentObject = new Student(11,"Sam");
-		Student studentObject1 = new Student(12,"Pen");
-		Student studentObject3 = new Student(91,"Mike");
+		Student studentObject = new Student(11, "Sam");
+		Student studentObject1 = new Student(12, "Pen");
+		Student studentObject3 = new Student(91, "Mike");
 
 		studentObject.display();
 		studentObject1.display();
