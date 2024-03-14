@@ -16,7 +16,7 @@ public class ListPractical {
 
 	public static void main(String[] args) {
 		//iterator
-		int i=0;
+		int iterate=0;
 
 		//ArrayList
 		ArrayList<String> values = new ArrayList<String>(); 
@@ -33,13 +33,13 @@ public class ListPractical {
 		System.out.println("Enter the values now");
 
 		//taking values
-		for (i = 0 ; i < numbers ; i++) {
-				values.add(scanner.nextLine());
+		for (iterate = 0 ; iterate < numbers ; iterate++) {
+			values.add(scanner.nextLine());
 		}
 
 		//displaying values
-		for (i = 0 ; i < values.size() ; i++) {
-			System.out.println("Value at index " + i + " is " + values.get(i));
+		for (iterate = 0 ; iterate < values.size() ; iterate++) {
+			System.out.println("Value at index " + iterate + " is " + values.get(iterate));
 		}
 	}
 

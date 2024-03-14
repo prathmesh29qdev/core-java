@@ -30,7 +30,7 @@ public class DuplicateValue {
 			duplicate.add(value);
 		}
 
-		removeDuplicates(duplicate);
+		removeDuplicatesValues(duplicate);
 
 		for (char index : duplicate) {
 			System.out.println(index);
@@ -41,7 +41,7 @@ public class DuplicateValue {
 	 * This method takes a list as input and removes the duplicate values from it.
 	 * @param charList
 	 */
-	private static void removeDuplicates(List<Character> charList) {
+	private static void removeDuplicatesValues(List<Character> charList) {
 		Set<Character> filteredSet = new HashSet<Character>();
 		Iterator<Character> iterator = charList.iterator();
 

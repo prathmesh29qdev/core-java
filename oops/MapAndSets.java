@@ -43,7 +43,7 @@ public class MapAndSets {
 		System.out.println(students.get("Gagan"));
 
 		for (Map.Entry<String, Integer> e : students.entrySet()) {
-			System.out.print(e.getKey()+ " ");
+			System.out.print(e.getKey() + " ");
 			System.out.println(e.getValue());
 		}
 

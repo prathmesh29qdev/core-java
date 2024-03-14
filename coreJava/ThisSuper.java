@@ -13,7 +13,6 @@ class Car {
 
 	String model = "XUV";
 	double price = 77.88;
-
 	int age = 0;
 	String name = "";
 

@@ -66,7 +66,8 @@ public class FIleHandling2 {
 						fileWriter.write(write);
 						fileWriter.close();
 						System.out.println(myFile.getName() + " File has been written.");
-					} catch (IOException e) {
+					}
+					catch (IOException e) {
 						System.out.println("Not able to write in file");
 						e.printStackTrace();
 					}

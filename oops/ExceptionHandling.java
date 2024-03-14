@@ -72,8 +72,7 @@ public class ExceptionHandling {
 			help();
 		}
 		catch (NullPointerException e) {
-			System.out.println(
-					"Caught in main error name given below:");
+			System.out.println("Caught in main error name given below:");
 			System.out.println(e);
 		}
 		System.out.println("Enter your age:");

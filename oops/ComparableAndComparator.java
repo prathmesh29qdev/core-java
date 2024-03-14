@@ -48,7 +48,6 @@ public class ComparableAndComparator {
 	public static void main(String[] args) {
 		//comparator function
 		Comparator<Student> com = new Comparator<Student>() {
-
 			public int compare(Student student1, Student student2) {
 				if (student1.age > student2.age) {
 					return 1;

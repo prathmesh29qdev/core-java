@@ -25,8 +25,8 @@ public class WhileDoWhile {
 		System.out.println("For do while:");
 		int number1 = 1;
 		do {	
-		System.out.print(number1);
-		number1++;
+			System.out.print(number1);
+			number1++;
 		} while (number1 > 0 && number1 <= 10);	
 	}
 
