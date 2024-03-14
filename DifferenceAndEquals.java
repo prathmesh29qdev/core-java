@@ -2,9 +2,10 @@ import java.math.BigDecimal;
 import java.util.Scanner;
 
 /**
+ * <p>
  * This program demonstrates the use of == and .equals()
  * for comparing integers, strings and bigDecimal values
- * <p>
+ * </p>
  * 
  * @author Prathmesh
  */

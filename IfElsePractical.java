@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
 /**
- * This program demonstrates the use of if..else conditional statements
  * <p>
+ * This program demonstrates the use of if..else conditional statements
+ * </p>
  * 
  * @author Prathmesh
  */

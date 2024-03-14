@@ -1,8 +1,12 @@
 import java.util.Scanner;
 
 /**
+ * <p>
  * This program demonstrate the use of switch case statement and outputs the name of month based 
  * on the number of month.
+ * </p>
+ * 
+ * @author Prathmesh
  */
 public class SwitchCase {
 

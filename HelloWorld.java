@@ -1,6 +1,7 @@
 /**
- * This program prints simple "Hello World" statement.
  * <p>
+ * This program prints simple "Hello World" statement.
+ * </p>
  * 
  * @author Prathmesh
  */

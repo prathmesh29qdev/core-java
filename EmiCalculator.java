@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
 /**
- * This program demonstrates EMI Calculator using class, object, variables, operators, and datatypes.
  * <p>
+ * This program demonstrates EMI Calculator using class, object, variables, operators, and datatypes.
+ * </p>
  * 
  * @author Prathmesh
  */

@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
 /**
- * This program demonstrates the use of different string methods.
  * <p>
+ * This program demonstrates the use of different string methods.
+ * </p>
  * 
  * @author Prathmesh
  */
@@ -47,7 +48,7 @@ public class StringMethods {
 
 		//substring function
 		System.out.println("Substring in String: " +(string1.substring(3, 6)));
-
+		
 		//trim function
 		String str = "  Qdev   Technolab!   ";
 		System.out.println("Without Trim function in String: " +str);

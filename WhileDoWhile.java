@@ -1,5 +1,9 @@
 /**
+ * <p>
  * This program demonstrates the use of while and do..while statements and prints 1 to 10 numbers.
+ * </p>
+ * 
+ * @author Prathmesh
  */
 public class WhileDoWhile {
 

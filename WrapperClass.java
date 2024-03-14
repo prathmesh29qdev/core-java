@@ -1,6 +1,7 @@
 /**
- * This program demonstrates the concept of Wrapper class to compare the objects.
  * <p>
+ * This program demonstrates the concept of Wrapper class to compare the objects.
+ * </p>
  * 
  * @author Prathmesh
  */

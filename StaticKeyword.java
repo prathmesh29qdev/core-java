@@ -1,6 +1,7 @@
 /**
- * This program demonstrates the use of static keyword
  * <p>
+ * This program demonstrates the use of static keyword
+ * </p>
  * 
  * @author Prathmesh
  */
@@ -47,10 +48,10 @@ class Student {
 	 * @param roll The roll number of the student
 	 * @param nameOfStudent is the name of the student
 	 */
-	Student(int roll, String nameOfStudent){  
-		rollno = roll;  
-		name = nameOfStudent;  
-	}  
+	Student(int roll, String nameOfStudent){
+		rollno = roll;
+		name = nameOfStudent;
+	}
 
 	void display() {
 		System.out.println("rollno: " + rollno + " name: " + name + " college: " + college);

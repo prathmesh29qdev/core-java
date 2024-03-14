@@ -1,7 +1,8 @@
 /**
  * <h3>Break Continue Statements</h3>
- * This program demonstrates the usage of the break and continue statements using for loop.
  * <p>
+ * This program demonstrates the usage of the break and continue statements using for loop.
+ * </p>
  * 
  * @author Prathmesh
  */
