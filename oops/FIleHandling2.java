@@ -44,7 +44,7 @@ public class FIleHandling2 {
 		 * checks if shouldContinue to execute the code and asks for user input.
 		 */
 		while (shouldContinue) {
-			System.out.println("Enter number according to the option you want to chose");
+			System.out.println("Enter number according to the option you want to choose");
 			System.out.println("1 for entering string in the file.");
 			System.out.println("2 for reading the file.");
 			System.out.println("3 for deleting the file.");
