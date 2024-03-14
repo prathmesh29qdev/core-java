@@ -51,7 +51,7 @@ public class StringMethods {
 
 		//substring function
 		System.out.println("Substring in String: " +(string1.substring(3, 6)));
-		
+
 		//trim function
 		String str = "  Qdev   Technolab!   ";
 		System.out.println("Without Trim function in String: " +str);

@@ -29,11 +29,6 @@ public class ConstructorPractical {
 		return number3;	
 	}
 
-	/**
-	 * The main method of the program.
-     * 
-     * @param args The command-line arguments (not used in this program)
-     */
 	public static void main(String[] args) {
 		System.out.println("Enter two digits");
 		Scanner scanner = new Scanner(System.in);

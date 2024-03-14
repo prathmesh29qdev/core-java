@@ -31,7 +31,7 @@ public class DuplicateValue {
 		}
 
 		removeDuplicates(duplicate);
-		
+
 		for (char index : duplicate) {
 			System.out.println(index);
 		}

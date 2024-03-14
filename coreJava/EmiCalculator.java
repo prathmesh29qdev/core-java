@@ -3,7 +3,7 @@ package coreJava;
 import java.util.Scanner;
 
 /**
- * <h3> EMI calculator</h3>
+ * <h3>EMI calculator</h3>
  * <p>
  * This program demonstrates EMI Calculator using class, object, variables, operators, and datatypes.
  * </p>
@@ -13,10 +13,9 @@ import java.util.Scanner;
 public class EmiCalculator {
 
 	public float emiCalculate(float principal, float rateOfInterest, float time) {
-		float emi;
 		rateOfInterest = rateOfInterest / (12 * 100); // one month interest
 		time = time * 12; // one month period
-		emi = (principal * rateOfInterest * (float)Math.pow(1 + rateOfInterest, time)) 
+		float emi = (principal * rateOfInterest * (float)Math.pow(1 + rateOfInterest, time)) 
 				/ (float)(Math.pow(1 + rateOfInterest, time) - 1);
 		return emi;
 	}
