@@ -2,16 +2,19 @@ import java.util.Scanner;
 
 /**
  * This program demonstrates the concept of Constructors.
+ * <p>
+ * 
+ * @author Prathmesh
  */
 public class ConstructorPractical {
-	
+
 	/**
 	 * This is a default constructor.
 	 */
 	ConstructorPractical() {
 		System.out.println("Constructor Initialixed");
 	}
-	
+
 	/**
 	 * This is a parameterized constructor.
 	 */
@@ -21,7 +24,7 @@ public class ConstructorPractical {
 		number3 = number1 * number2;
 		return number3;	
 	}
-	
+
 	/**
 	 * The main method of the program.
      * 

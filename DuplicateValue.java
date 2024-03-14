@@ -8,7 +8,10 @@ import java.util.Scanner;
 import java.util.Set;
 
 /**
- * This programs removes the duplicate values from the list
+ * This programs removes the duplicate values from the list.
+ * <p>
+ * 
+ * @author Prathmesh
  */
 public class DuplicateValue {
 
@@ -16,7 +19,7 @@ public class DuplicateValue {
 		ArrayList<Character> duplicate = new ArrayList<Character>();
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter 7 characters in the list");
-		
+
 		/**
 		 * taking input in the list
 		 */
@@ -24,7 +27,7 @@ public class DuplicateValue {
 			char value = scanner.next().charAt(0);
 			duplicate.add(value);
 		}
-		
+
 		removeDuplicates(duplicate);
 		
 		for (char index : duplicate) {
@@ -39,7 +42,7 @@ public class DuplicateValue {
 	private static void removeDuplicates(List<Character> charList) {
 		Set<Character> filteredSet = new HashSet<Character>();
 		Iterator<Character> iterator = charList.iterator();
-		
+
 		while (iterator.hasNext()) {
 			char currentChar = iterator.next();
 			if (filteredSet.contains(currentChar)) {

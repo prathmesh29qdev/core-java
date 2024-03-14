@@ -1,8 +1,11 @@
 /**
  * This program demonstrates the use of For Loops.
+ * <p>
+ * 
+ * @author Prathmesh
  */
 public class Forloop {
-	
+
 	public static void main(String[] args) {
 		//for loop
 		int row = 0, column = 0;
@@ -13,6 +16,5 @@ public class Forloop {
 			System.out.println();
 		}
 	}
-	
+
 }
- 	

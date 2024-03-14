@@ -13,7 +13,7 @@ public class WhileDoWhile {
 		}
 		System.out.println();
 		System.out.println();
-				
+
 		//do..while to show 1 to 10
 		System.out.println("for do while:");
 		int number1 = 1;

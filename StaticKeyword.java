@@ -1,5 +1,8 @@
 /**
  * This program demonstrates the use of static keyword
+ * <p>
+ * 
+ * @author Prathmesh
  */
 public class StaticKeyword {
 
@@ -11,21 +14,16 @@ public class StaticKeyword {
 	count++; 
 	System.out.println(count); 
 	}
-	
-	/**
-     * The main method of the program.
-     * 
-     * @param args The command-line arguments (not used in this program)
-     */
+
 	public static void main(String[] args) {
 		Student.change();
-		Student std = new Student(11,"Sam");
-		Student std1 = new Student(12,"Pen");
-		Student std3 = new Student(91,"Mike");
-		
-		std.display();
-		std1.display();
-		std3.display();
+		Student studentObject = new Student(11,"Sam");
+		Student studentObject1 = new Student(12,"Pen");
+		Student studentObject3 = new Student(91,"Mike");
+
+		studentObject.display();
+		studentObject1.display();
+		studentObject3.display();
 	}
 
 }
@@ -42,18 +40,18 @@ class Student {
 	static void change(){  
 		college = "BITS Varnama";  //changing the college name for all students
 	}
-	
+
 	/**
-     * Initializes a student with roll number and name.
-     * 
-     * @param roll The roll number of the student
-     * @param nameOfStudent is the name of the student
-     */
+	 * Initializes a student with roll number and name.
+	 * 
+	 * @param roll The roll number of the student
+	 * @param nameOfStudent is the name of the student
+	 */
 	Student(int roll, String nameOfStudent){  
 		rollno = roll;  
 		name = nameOfStudent;  
 	}  
-	
+
 	void display() {
 		System.out.println("rollno: " + rollno + " name: " + name + " college: " + college);
 	}

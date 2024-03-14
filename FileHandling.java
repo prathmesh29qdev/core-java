@@ -5,8 +5,12 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+
 /**
  * This program shows the file handling methods to read, write, delete and create a file.
+ * <p>
+ * 
+ * @author Prathmesh
  */
 public class FileHandling {
 
@@ -20,7 +24,7 @@ public class FileHandling {
 			System.out.println("File not created");
 			e.printStackTrace();
 		}
-		
+
 		//writing in file
 		try {
 			FileWriter fileWriter = new FileWriter("myTestFile.txt");
@@ -31,7 +35,7 @@ public class FileHandling {
 			System.out.println("Not able to write in file");
 			e.printStackTrace();
 		}
-		
+
 		//read the file
 		try {
 			Scanner scanner = new Scanner(myFile);
@@ -45,7 +49,7 @@ public class FileHandling {
 			System.out.println("File can't be read");
 			e.printStackTrace();
 		}
-		
+
 		//file deleting
 		if (myFile.delete()) {
 			System.out.println("File has been deleted: " + myFile.getName());

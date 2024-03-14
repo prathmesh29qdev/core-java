@@ -6,6 +6,9 @@ import java.util.Set;
 
 /**
  * This program demonstrates the usage of HashMap and basic operations on maps.
+ * <p>
+ * 
+ * @author Prathmesh
  */
 public class MapAndSets {
 
@@ -18,13 +21,13 @@ public class MapAndSets {
 		students.put("Mahesh", 33);
 		students.put("Mahima", 90);
 		students.put("Ramesh", 22);
-		
+
 		System.out.println(students.keySet());
-		
+
 		for (String key : students.keySet()) {
 			System.out.println(students.get(key));
 		}
-		
+
 		/**
 		 * Checks if the particular value is present in the HashMap and displays it.
 		 */
@@ -33,15 +36,15 @@ public class MapAndSets {
 		} else {
 			System.out.println("Key dosesn't exist");
 		}
-		
+
 		System.out.println(students.get("Chaman"));
 		System.out.println(students.get("Gagan"));
-				
+
 		for (Map.Entry<String, Integer> e : students.entrySet()) {
 			System.out.print(e.getKey()+ " ");
 			System.out.println(e.getValue());
 		}
-		
+
 		Set<String> keys = students.keySet();
 		for (String key : keys) {
 			System.out.println(key + " " + students.get(key));

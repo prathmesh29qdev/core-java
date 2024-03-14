@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 /**
  * This program demonstrates the use of if..else conditional statements
+ * <p>
+ * 
+ * @author Prathmesh
  */
 public class IfElsePractical {
 
@@ -10,7 +13,7 @@ public class IfElsePractical {
 		System.out.println("Enter a number for age");
 		Scanner scanner = new Scanner(System.in);
 		int age = scanner.nextInt();
-		
+
 		if (age <= 25){
 			System.out.println("Young");
 		} else if (age > 25 && age <= 60) {

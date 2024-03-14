@@ -9,13 +9,16 @@ import java.util.Scanner;
 /**
  * This program show the use of file handling methods based on user input to select from the tasks
  * like to read, write or delete a file.
+ * <p>
+ * 
+ * @author Prathmesh
  */
 public class FIleHandling2 {
 
 	public static void main(String[] args) {
 		String fileName = "myTestFile3";
 		File myFile = new File(fileName);
-		
+
 		//creating a file
 		try {
 			myFile.createNewFile();
@@ -24,16 +27,16 @@ public class FIleHandling2 {
 			System.out.println("file not created");
 			e.printStackTrace();
 		}
-		
+
 		if (myFile.canExecute()) {
 			System.out.println("File is executable");
 		} else {
-	        System.out.println("File is not executable");
+			System.out.println("File is not executable");
 		}
-		
+
 		Scanner scanner = new Scanner(System.in);
 		boolean shouldContinue = true;
-		
+
 		/**
 		 * checks if shouldContinue to execute the code and asks for user input.
 		 */
@@ -45,7 +48,7 @@ public class FIleHandling2 {
 			System.out.println("4 to stop.");
 			int option = scanner.nextInt();
 			scanner.nextLine();
-			
+
 			switch (option) {
 			/**
 			 * if this case is executed then will let user write in the file.

@@ -4,9 +4,12 @@ import java.util.Scanner;
 /**
  * This program demonstrates the concept of Exception handling when user enters divisor as zero.
  * And also checks age above 18 to access the website if not then throws exception.
+ * <p>
+ * 
+ * @author Prathmesh
  */
 class Division {
-	
+
 	//throws Arithmetic Exception
 	void divide(float number1, float number2) throws ArithmeticException {
 		float firstNumber, secondNumber;
@@ -19,7 +22,7 @@ class Division {
 			System.out.println("answer is : " + number3);
 		}
 	}
-	
+
 }
 
 /**
@@ -36,7 +39,7 @@ public class ExceptionHandling {
 			throw e;
 		}
 	}
-	
+
 	//throws Arithmetic Exception
 	static void checkAge(int age) throws ArithmeticException {
 		if (age < 18) {
@@ -45,7 +48,7 @@ public class ExceptionHandling {
 			System.out.println("You're authorized");
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		System.out.println("enter two numbers to perform division");
 		Scanner scanner = new Scanner(System.in);
@@ -63,7 +66,7 @@ public class ExceptionHandling {
 		finally {
 			System.out.println("This is the finally block");
 		}
-		
+
 		try {
 			help();
 		}

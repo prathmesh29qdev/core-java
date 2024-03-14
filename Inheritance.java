@@ -2,6 +2,9 @@ package projects;
 
 /**
  * This program demonstrates the concept of inheritance using these classes which shows different types of inheritance.
+ * <p>
+ * 
+ * @author Prathmesh
  */
 class Vehicle {
 
