@@ -48,14 +48,14 @@ public class ThisSuper extends Car {
 	/**
 	 * This function sets the value of model and price using super keyword.
 	 */
-	void func() {
+	void carDetails() {
 		super.model = "SUV";
 		super.price = 100;
 		System.out.println("The model and price of BMW car is : " + model + "and " + price);
 	}
 
 	public static void main(String[] args) {
-		new ThisSuper().func();
+		new ThisSuper().carDetails();
 		Car car = new Car();
 		car.setAge(5);
 		car.setName("Honda");

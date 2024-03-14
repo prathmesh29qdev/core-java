@@ -57,7 +57,7 @@ class Student {
 	}
 
 	void display() {
-		System.out.println("rollno: " + rollno + " name: " + name + " college: " + college);
+		System.out.println("Rollno: " + rollno + " Name: " + name + " College: " + college);
 	}
 
 }

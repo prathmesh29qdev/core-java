@@ -21,7 +21,7 @@ class Division {
 			throw new ArithmeticException("The divisor cannot be zero");
 		} else {
 			float number3 = firstNumber/secondNumber;
-			System.out.println("answer is : " + number3);
+			System.out.println("Answer is : " + number3);
 		}
 	}
 
@@ -34,7 +34,7 @@ public class ExceptionHandling {
 
 	static void help() {
 		try {
-			throw new NullPointerException("error thrown");
+			throw new NullPointerException("Error thrown");
 		}
 		catch(NullPointerException e) {
 			System.out.println("Caught in help()");
@@ -52,7 +52,7 @@ public class ExceptionHandling {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("enter two numbers to perform division");
+		System.out.println("Enter two numbers to perform division");
 		Scanner scanner = new Scanner(System.in);
 		float number1 = scanner.nextInt();
 		float number2 = scanner.nextInt();

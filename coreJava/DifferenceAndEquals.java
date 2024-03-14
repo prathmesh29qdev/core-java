@@ -35,28 +35,28 @@ public class DifferenceAndEquals {
 
 		//integer
 		if (number1 == number2) {
-			System.out.println("numbers are equal according to ==");
+			System.out.println("Numbers are equal according to ==");
 		} else {
-			System.out.println("numbers are not equal according to ==");
+			System.out.println("Numbers are not equal according to ==");
 		}
 
 		if (number1.equals(number2)) {
-			System.out.println("numbers are equal according to .equals");
+			System.out.println("Numbers are equal according to .equals");
 		} else {
-			System.out.println("numbers are not equal according to .equals");
+			System.out.println("Numbers are not equal according to .equals");
 		}
 
 		//string
 		if (string1 == string2) {
-			System.out.println("strings are equal according to ==");
+			System.out.println("Strings are equal according to ==");
 		} else {
-			System.out.println("strings are not equal according to ==");
+			System.out.println("Strings are not equal according to ==");
 		}
 
 		if (string1.equals(string2)) {
-			System.out.println("strings are equal according to .equals");
+			System.out.println("Strings are equal according to .equals");
 		} else {
-			System.out.println("strings are not equal according to .equals");
+			System.out.println("Strings are not equal according to .equals");
 		}
 
 		//Bigdecimal

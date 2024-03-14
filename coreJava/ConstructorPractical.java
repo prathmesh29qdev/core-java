@@ -36,7 +36,7 @@ public class ConstructorPractical {
 		int number2 = scanner.nextInt();
 		ConstructorPractical constructorPractical = new ConstructorPractical();
 		int result = constructorPractical.ConstructorPractical(number1, number2);
-		System.out.println("result is:" + result);
+		System.out.println("Result is:" + result);
 	}
 
 }

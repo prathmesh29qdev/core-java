@@ -18,15 +18,17 @@ import java.util.Scanner;
 public class FIleHandling2 {
 
 	public static void main(String[] args) {
-		String fileName = "myTestFile3";
+		System.out.println("Enter a name for the file");
+		Scanner scanner = new Scanner(System.in);
+		String fileName = scanner.nextLine();
 		File myFile = new File(fileName);
 
 		//creating a file
 		try {
 			myFile.createNewFile();
-			System.out.println("file created");
+			System.out.println("File created");
 		} catch (IOException e) {
-			System.out.println("file not created");
+			System.out.println("File not created");
 			e.printStackTrace();
 		}
 
@@ -36,7 +38,6 @@ public class FIleHandling2 {
 			System.out.println("File is not executable");
 		}
 
-		Scanner scanner = new Scanner(System.in);
 		boolean shouldContinue = true;
 
 		/**
@@ -66,7 +67,7 @@ public class FIleHandling2 {
 						fileWriter.close();
 						System.out.println(myFile.getName() + " File has been written.");
 					} catch (IOException e) {
-						System.out.println("not able to write in file");
+						System.out.println("Not able to write in file");
 						e.printStackTrace();
 					}
 				} else {
@@ -90,7 +91,7 @@ public class FIleHandling2 {
 						read.close();
 					} 
 					catch (FileNotFoundException e) {
-						System.out.println("file can't be read");
+						System.out.println("File can't be read");
 						e.printStackTrace();
 					}
 				} else {
@@ -120,7 +121,7 @@ public class FIleHandling2 {
 				System.out.println("Stopping the execution");
 				break;
 			default:
-				System.out.println("you have chosen invalid options, please select from the mentioned.");
+				System.out.println("You have chosen invalid options, please select from the mentioned.");
 				break;
 			}
 		}

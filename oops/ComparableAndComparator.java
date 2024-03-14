@@ -65,7 +65,7 @@ public class ComparableAndComparator {
 		list.add(new Student(20, "Sohail"));
 		list.add(new Student(14, "Joshi"));
 
-		Collections.sort(list,com); //comparator - this compares list with comparator
+		Collections.sort(list, com); //comparator - this compares list with comparator
 		Collections.sort(list); // comparable (while executing this code, make one of these statement comment
 
 		for (Student s : list) {

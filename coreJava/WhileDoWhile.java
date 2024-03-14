@@ -12,7 +12,7 @@ public class WhileDoWhile {
 
 	public static void main(String[] args) {
 		//while to show 1 to 10
-		System.out.println("while:");
+		System.out.println("While:");
 		int number = 1;
 		while (number > 0 && number <= 10) {
 			System.out.print(number);
@@ -22,7 +22,7 @@ public class WhileDoWhile {
 		System.out.println();
 
 		//do..while to show 1 to 10
-		System.out.println("for do while:");
+		System.out.println("For do while:");
 		int number1 = 1;
 		do {	
 		System.out.print(number1);
