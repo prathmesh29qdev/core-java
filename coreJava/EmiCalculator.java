@@ -15,9 +15,8 @@ public class EmiCalculator {
 	public float emiCalculate(float principal, float rateOfInterest, float time) {
 		rateOfInterest = rateOfInterest / (12 * 100); // one month interest
 		time = time * 12; // one month period
-		float emi = (principal * rateOfInterest * (float)Math.pow(1 + rateOfInterest, time)) 
+		return (principal * rateOfInterest * (float)Math.pow(1 + rateOfInterest, time)) 
 				/ (float)(Math.pow(1 + rateOfInterest, time) - 1);
-		return emi;
 	}
 
 	public static void main(String[] args) {

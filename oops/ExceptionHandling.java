@@ -14,9 +14,8 @@ class Division {
 
 	//throws Arithmetic Exception
 	void divide(float number1, float number2) throws ArithmeticException {
-		float firstNumber, secondNumber;
-		firstNumber = number1;
-		secondNumber = number2;
+		float firstNumber = number1;
+		float secondNumber = number2;
 		if (secondNumber == 0) {
 			throw new ArithmeticException("The divisor cannot be zero");
 		} else {
