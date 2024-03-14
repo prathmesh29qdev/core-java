@@ -8,20 +8,20 @@ import java.util.Scanner;
  * This program demonstrates the use of HashSet and basic operations on sets.
  */
 public class SetsPractical {
-	
+
 	public static void main(String[] args) {
 		HashSet<Integer> set = new HashSet<>();
 		System.out.println("Enter number of elements you want to add in set");
-		Scanner sc = new Scanner(System.in);
-		int numberOfElement = sc.nextInt();
+		Scanner scanner = new Scanner(System.in);
+		int numberOfElement = scanner.nextInt();
 		
 		System.out.println("Enter " + " numbers to add in set");
 		for (int i = 0 ; i < numberOfElement ; i++) {
-			set.add(sc.nextInt());
+			set.add(scanner.nextInt());
 		}
 		
 		System.out.println("Enter any number to check if is is in the Set");
-		int number = sc.nextInt();
+		int number = scanner.nextInt();
 		
 		if (set.contains(number)) {
 			System.out.println("Set has this value");
@@ -38,5 +38,5 @@ public class SetsPractical {
 			System.out.print(it.next() + " ");
 		}
 	}
-	
+
 }

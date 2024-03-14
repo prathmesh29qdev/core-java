@@ -8,15 +8,15 @@ import java.util.Scanner;
 class Division {
 	
 	//throws Arithmetic Exception
-	void divide(float num1, float num2) throws ArithmeticException {
-		float a, b;
-		a = num1;
-		b = num2;
-		if (b == 0) {
+	void divide(float number1, float number2) throws ArithmeticException {
+		float firstNumber, secondNumber;
+		firstNumber = number1;
+		secondNumber = number2;
+		if (secondNumber == 0) {
 			throw new ArithmeticException("The divisor cannot be zero");
 		} else {
-			float num3 = a/b;
-			System.out.println("answer is : " + num3);
+			float number3 = firstNumber/secondNumber;
+			System.out.println("answer is : " + number3);
 		}
 	}
 	
@@ -26,7 +26,7 @@ class Division {
  * Exception is thrown to demonstrate the use of throw keyword.
  */
 public class ExceptionHandling {
-	
+
 	static void help() {
 		try {
 			throw new NullPointerException("error thrown");
@@ -48,9 +48,9 @@ public class ExceptionHandling {
 	
 	public static void main(String[] args) {
 		System.out.println("enter two numbers to perform division");
-		Scanner sc = new Scanner(System.in);
-		float number1 = sc.nextInt();
-		float number2 = sc.nextInt();
+		Scanner scanner = new Scanner(System.in);
+		float number1 = scanner.nextInt();
+		float number2 = scanner.nextInt();
 
 		Division division = new Division();
 		try {
@@ -73,8 +73,8 @@ public class ExceptionHandling {
 			System.out.println(e);
 		}
 		System.out.println("Enter your age:");
-		int age  = sc.nextInt();
+		int age  = scanner.nextInt();
 		checkAge(age);
 	}
-	
+
 }

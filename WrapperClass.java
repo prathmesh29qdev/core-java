@@ -2,7 +2,7 @@
  * This program demonstrates the concept of Wrapper class to compare the objects.
  */
 public class WrapperClass {
-	
+
 	public static void main(String[] args) {
 		int number = 10;
 		int number2 = 10;
@@ -28,5 +28,5 @@ public class WrapperClass {
 			System.out.println("Values are equal " + compareResult);
 		}
 	}
-	
+
 }

@@ -11,7 +11,7 @@ import java.util.Scanner;
  * like to read, write or delete a file.
  */
 public class FIleHandling2 {
-	
+
 	public static void main(String[] args) {
 		String fileName = "myTestFile3";
 		File myFile = new File(fileName);
@@ -31,7 +31,7 @@ public class FIleHandling2 {
 	        System.out.println("File is not executable");
 		}
 		
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		boolean shouldContinue = true;
 		
 		/**
@@ -43,8 +43,8 @@ public class FIleHandling2 {
 			System.out.println("2 for reading the file.");
 			System.out.println("3 for deleting the file.");
 			System.out.println("4 to stop.");
-			int option = sc.nextInt();
-			sc.nextLine();
+			int option = scanner.nextInt();
+			scanner.nextLine();
 			
 			switch (option) {
 			/**
@@ -54,7 +54,7 @@ public class FIleHandling2 {
 				//writing in file
 				if (myFile.exists()) {
 					System.out.println("Enter a string you want to write in the file.");
-					String write = sc.nextLine();
+					String write = scanner.nextLine();
 					try {
 						FileWriter fileWriter = new FileWriter(fileName);
 						fileWriter.write(write);
@@ -78,7 +78,7 @@ public class FIleHandling2 {
 					try {
 						Scanner read = new Scanner(myFile);
 					
-						while(read.hasNextLine()) {
+						while (read.hasNextLine()) {
 							String line = read.nextLine();
 							System.out.println(line);
 						}
@@ -119,7 +119,7 @@ public class FIleHandling2 {
 				break;
 			}
 		}
-		sc.close();
+		scanner.close();
 	}
-	
+
 }

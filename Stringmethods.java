@@ -4,7 +4,7 @@ import java.util.Scanner;
  * This program demonstrates the use of different string methods
  */
 public class Stringmethods {
-	
+
 	/**
      * The main method of the program.
      * 
@@ -12,12 +12,12 @@ public class Stringmethods {
      */
 	public static void main(String[] args) {
 		System.out.println("Enter the string you wnat to perform operations on");
-		Scanner sc = new Scanner(System.in);
-		String string1  = sc.nextLine();
+		Scanner scanner = new Scanner(System.in);
+		String string1  = scanner.nextLine();
 		String string2 = new String("Apple");
 		
 		System.out.println("Enter element position you want to extract starting from 1");
-		int index  = sc.nextInt();
+		int index  = scanner.nextInt();
 		
 		/**
 		 * Condition for checking if the character is present in the string
@@ -55,5 +55,5 @@ public class Stringmethods {
 		System.out.println("Without Trim function in String: " +str);
 		System.out.println("Trim function in String:" +(str.trim()));
 	}
-	
+
 }

@@ -5,12 +5,12 @@ import java.util.Scanner;
  * on the number of month.
  */
 public class SwitchCase {
-	
+
 	public static void main(String[] args) {
 		System.out.println("Switch case output:");
 		System.out.println("Enter number of month:");
-		Scanner sc = new Scanner(System.in);
-		int month = sc.nextInt();
+		Scanner scanner = new Scanner(System.in);
+		int month = scanner.nextInt();
 		switch(month) {
 			case 1:
 				System.out.println("January"); 

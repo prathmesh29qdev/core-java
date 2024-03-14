@@ -11,17 +11,17 @@ import java.util.Set;
  * This programs removes the duplicate values from the list
  */
 public class DuplicateValue {
-	
+
 	public static void main(String[] args) {
 		ArrayList<Character> duplicate = new ArrayList<Character>();
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter 7 characters in the list");
 		
 		/**
 		 * taking input in the list
 		 */
 		for (int i = 0 ; i < 7 ; i++) {
-			char value = sc.next().charAt(0);
+			char value = scanner.next().charAt(0);
 			duplicate.add(value);
 		}
 		
@@ -49,5 +49,5 @@ public class DuplicateValue {
 			}
 		}
 	}
-	
+
 }

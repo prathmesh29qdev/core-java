@@ -3,32 +3,26 @@ package projects;
  * This program demonstrates the concept of interface and shows how a class override its uninitialized methods.
  */
 interface API {
-	
 	default void display() {
 		System.out.println("Default display method");
 	}
-	
 }
 
 interface Interface1 extends API {
-	
 	void show();
 	void fun();
-
 }
 
 interface Interface2 extends API {
-	
 	void print();
 	void fun();
-
 }
 
 /**
  * This class implements both the interfaces and also execute the method body.
  */
 public class InterfaceExample implements Interface1,Interface2 {
-	
+
 	@Override
 	public void print() {
 		System.out.println("Display from Interface2");
@@ -59,5 +53,5 @@ public class InterfaceExample implements Interface1,Interface2 {
 		interfaceExample.print();
 		interfaceExample.fun();
 	}
-	
+
 }

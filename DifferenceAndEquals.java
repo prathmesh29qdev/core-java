@@ -8,23 +8,23 @@ import java.util.Scanner;
 public class DifferenceAndEquals {
 	
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter two numbers");
-		int num1 = sc.nextInt();
-		int num2 = sc.nextInt();
+		int firstNumber = scanner.nextInt();
+		int secondNumber = scanner.nextInt();
 	
-		Integer number1 = num1;
-		Integer number2 = num2;
+		Integer number1 = firstNumber;
+		Integer number2 = secondNumber;
 		
-		sc.nextLine();
+		scanner.nextLine();
 		
 		System.out.println("Enter two strings");
-		String string1 = sc.nextLine();
-		String string2 = sc.nextLine();
+		String string1 = scanner.nextLine();
+		String string2 = scanner.nextLine();
 		
 		System.out.println("Enter two bigdecimal. example: 0.45");
-		BigDecimal bd1 = sc.nextBigDecimal();
-		BigDecimal bd2 = sc.nextBigDecimal();
+		BigDecimal bd1 = scanner.nextBigDecimal();
+		BigDecimal bd2 = scanner.nextBigDecimal();
 		
 		//integer
 		if (number1 == number2) {

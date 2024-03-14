@@ -29,11 +29,11 @@ public class ConstructorPractical {
      */
 	public static void main(String[] args) {
 		System.out.println("Enter two digits");
-		Scanner myObj = new Scanner(System.in);
-		int num1 = myObj.nextInt();
-		int num2 = myObj.nextInt();
+		Scanner scanner = new Scanner(System.in);
+		int number1 = scanner.nextInt();
+		int number2 = scanner.nextInt();
 		ConstructorPractical constructorPractical = new ConstructorPractical();
-		int result = constructorPractical.ConstructorPractical(num1, num2);
+		int result = constructorPractical.ConstructorPractical(number1, number2);
 		System.out.println("result is:" + result);
 	}
 
