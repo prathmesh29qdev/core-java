@@ -1,4 +1,4 @@
-package coreJava;
+package java;
 
 /**
  * <h3>Display Hello World</h3>

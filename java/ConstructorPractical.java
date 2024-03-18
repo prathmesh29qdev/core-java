@@ -1,4 +1,4 @@
-package coreJava;
+package java;
 
 import java.util.Scanner;
 
@@ -24,7 +24,7 @@ public class ConstructorPractical {
 	 */
 	ConstructorPractical(int number1, int number2) {
 		System.out.println("Inside parameterized Constructor");
-		System.out.println("Result is " + number1 * number2);	
+		System.out.println("Result is " + number1 * number2);
 	}
 
 	public static void main(String[] args) {

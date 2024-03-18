@@ -1,9 +1,10 @@
-package coreJava;
+package java;
 
 /**
  * <h3>Wrapper class</h3>
  * <p>
- * This program demonstrates the concept of Wrapper class to compare the objects.
+ * This program demonstrates the concept of Wrapper class to compare the
+ * objects.
  * </p>
  * 
  * @author Prathmesh
@@ -25,11 +26,11 @@ public class WrapperClass {
 		}
 
 		/**
-		 * values are stored in compareResult and returns if any one of them is 
-		 * greater, smaller or equal
+		 * values are stored in compareResult and returns if any one of them is greater,
+		 * smaller or equal
 		 */
 		int compareResult = Integer.compare(number, number2);
-		if (compareResult > 0) {	
+		if (compareResult > 0) {
 			System.out.println("First number is greater" + compareResult);
 		} else if (compareResult < 0) {
 			System.out.println("Second number is greater" + compareResult);

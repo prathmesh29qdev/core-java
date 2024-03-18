@@ -1,4 +1,4 @@
-package coreJava;
+package java;
 
 import java.math.BigDecimal;
 import java.util.Scanner;
@@ -6,8 +6,8 @@ import java.util.Scanner;
 /**
  * <h3>Equals implementation</h3>
  * <p>
- * This program demonstrates the use of == and .equals()
- * for comparing integers, strings and bigDecimal values
+ * This program demonstrates the use of == and .equals() for comparing integers,
+ * strings and bigDecimal values
  * </p>
  * 
  * @author Prathmesh
@@ -33,7 +33,7 @@ public class DifferenceAndEquals {
 		BigDecimal bigDecimal = scanner.nextBigDecimal();
 		BigDecimal bigDecimal2 = scanner.nextBigDecimal();
 
-		//integer
+		// integer
 		if (number1 == number2) {
 			System.out.println("Numbers are equal according to ==");
 		} else {
@@ -46,7 +46,7 @@ public class DifferenceAndEquals {
 			System.out.println("Numbers are not equal according to .equals");
 		}
 
-		//string
+		// string
 		if (string1 == string2) {
 			System.out.println("Strings are equal according to ==");
 		} else {
@@ -59,7 +59,7 @@ public class DifferenceAndEquals {
 			System.out.println("Strings are not equal according to .equals");
 		}
 
-		//Bigdecimal
+		// Bigdecimal
 		if (bigDecimal == bigDecimal2) {
 			System.out.println("Bigdecimals are equal according to ==");
 		} else {
