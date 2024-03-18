@@ -16,9 +16,9 @@ import java.util.Comparator;
 class Student implements Comparable<Student> {
 
 	int age;
-	
+
 	String name;
-	
+
 	public Student(int age, String name) {
 		this.age = age;
 		this.name = name;

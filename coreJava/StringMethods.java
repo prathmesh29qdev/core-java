@@ -33,7 +33,7 @@ public class StringMethods {
 
 		System.out.println("String 2 is : " + string2);
 		System.out.println("Concatenated string is  " + string1.concat(string2));
-		boolean ifEqual  = string1.equals(string2);
+		boolean ifEqual = string1.equals(string2);
 
 		if (ifEqual == true)
 			System.out.println("Strings are equal");

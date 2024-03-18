@@ -12,7 +12,7 @@ package oops;
 abstract class App {
 
 	abstract void login();
-	
+
 	void username() {
 		System.out.println("Username is public");
 	}

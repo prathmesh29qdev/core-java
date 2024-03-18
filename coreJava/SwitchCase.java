@@ -20,7 +20,7 @@ public class SwitchCase {
 		int month = scanner.nextInt();
 		switch (month) {
 			case 1:
-				System.out.println("January"); 
+				System.out.println("Jan"); 
 				break;
 			case 2:
 				System.out.println("Feb"); 
@@ -38,13 +38,13 @@ public class SwitchCase {
 				System.out.println("Jun"); 
 				break;
 			case 7:
-				System.out.println("July"); 
+				System.out.println("Jul"); 
 				break;
 			case 8:
 				System.out.println("Aug"); 
 				break;
 			case 9:
-				System.out.println("Sept"); 
+				System.out.println("Sep"); 
 				break;
 			case 10:
 				System.out.println("Oct"); 

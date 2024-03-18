@@ -12,7 +12,9 @@ public class WrapperClass {
 
 	public static void main(String[] args) {
 		int number = 10;
+
 		int number2 = 10;
+
 		Integer number1 = number;
 		Integer number3 = number2;
 

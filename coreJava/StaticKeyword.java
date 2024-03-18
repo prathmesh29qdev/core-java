@@ -11,7 +11,7 @@ package coreJava;
 public class StaticKeyword {
 
 	static int count;
-	
+
 	/**
 	 * initializes the object
 	 */
@@ -39,9 +39,9 @@ public class StaticKeyword {
 class Student {
 
 	int rollno;
-	
+
 	String name;
-	
+
 	static String college = "BITS"; //this is the default college for all students that's why declared static
 
 	static void change() {  

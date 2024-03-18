@@ -41,7 +41,7 @@ public class FileHandling {
 		//read the file
 		try {
 			Scanner scanner = new Scanner(myFile);
-			
+
 			while (scanner.hasNextLine()) {
 				String line = scanner.nextLine();
 				System.out.println(line);
