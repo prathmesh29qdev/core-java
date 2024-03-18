@@ -9,19 +9,25 @@ package oops;
  * @author Prathmesh
  */
 interface API {
+
 	default void display() {
 		System.out.println("Default display method");
 	}
+
 }
 
 interface Interface1 extends API {
+
 	void show();
 	void notShow();
+
 }
 
 interface Interface2 extends API {
+
 	void print();
 	void notShow();
+
 }
 
 /**

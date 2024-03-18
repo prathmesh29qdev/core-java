@@ -12,8 +12,11 @@ package oops;
 class Bikes {
 
 	int cc;
+
 	String brand;
+
 	String bike;
+
 	//Compile time Polymorphism 
 	String buyBike(int cc, String brand) {
 		bike = "Bullet";

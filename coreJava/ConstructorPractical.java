@@ -16,15 +16,15 @@ public class ConstructorPractical {
 	 * This is a default constructor.
 	 */
 	ConstructorPractical() {
-		System.out.println("Constructor Initialixed");
+		System.out.println("Constructor Initialized");
 	}
 
 	/**
 	 * This is a parameterized constructor.
 	 */
-	int ConstructorPractical(int number1, int number2) {
+	ConstructorPractical(int number1, int number2) {
 		System.out.println("Inside parameterized Constructor");
-		return number1 * number2;	
+		System.out.println("Result is " + number1 * number2);	
 	}
 
 	public static void main(String[] args) {
@@ -33,8 +33,7 @@ public class ConstructorPractical {
 		int number1 = scanner.nextInt();
 		int number2 = scanner.nextInt();
 		ConstructorPractical constructorPractical = new ConstructorPractical();
-		int result = constructorPractical.ConstructorPractical(number1, number2);
-		System.out.println("Result is:" + result);
+		ConstructorPractical constructorPractical1 = new ConstructorPractical(number1, number2);
 	}
 
 }

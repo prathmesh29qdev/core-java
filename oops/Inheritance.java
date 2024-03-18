@@ -47,7 +47,7 @@ class Car extends Vehicle {
 class RoyalEnfield extends Bike {
 
 	void royalEnfieldClass() {
-	System.out.println("RoyalEnfield makes bike and this is multi-level inheritance");
+		System.out.println("RoyalEnfield makes bike and this is multi-level inheritance");
 	}
 
 }

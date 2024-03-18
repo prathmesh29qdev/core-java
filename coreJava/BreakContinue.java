@@ -11,10 +11,8 @@ package coreJava;
 public class BreakContinue {
 
 	public static void main(String[] args) {
-		int number;
-
 		// Loop through numbers from 1 to 10
-		for (number = 1 ; number <= 10 ; number++) {
+		for (int number = 1 ; number <= 10 ; number++) {
 			// If number is greater than 7, exit the loop
 			if (number > 7) {
 				break;

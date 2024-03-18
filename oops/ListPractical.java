@@ -15,9 +15,6 @@ import java.util.Scanner;
 public class ListPractical {
 
 	public static void main(String[] args) {
-		//iterator
-		int iterate=0;
-
 		//ArrayList
 		ArrayList<String> values = new ArrayList<String>(); 
 		Scanner scanner = new Scanner(System.in);
@@ -33,12 +30,12 @@ public class ListPractical {
 		System.out.println("Enter the values now");
 
 		//taking values
-		for (iterate = 0 ; iterate < numbers ; iterate++) {
+		for (int iterate = 0 ; iterate < numbers ; iterate++) {
 			values.add(scanner.nextLine());
 		}
 
 		//displaying values
-		for (iterate = 0 ; iterate < values.size() ; iterate++) {
+		for (int iterate = 0 ; iterate < values.size() ; iterate++) {
 			System.out.println("Value at index " + iterate + " is " + values.get(iterate));
 		}
 	}

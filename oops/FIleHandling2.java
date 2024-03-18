@@ -84,7 +84,7 @@ public class FIleHandling2 {
 				if (myFile.exists()) {
 					try {
 						Scanner read = new Scanner(myFile);
-					
+
 						while (read.hasNextLine()) {
 							String line = read.nextLine();
 							System.out.println(line);

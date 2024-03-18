@@ -18,7 +18,7 @@ public class SwitchCase {
 		System.out.println("Enter number of month:");
 		Scanner scanner = new Scanner(System.in);
 		int month = scanner.nextInt();
-		switch(month) {
+		switch (month) {
 			case 1:
 				System.out.println("January"); 
 				break;
@@ -59,7 +59,6 @@ public class SwitchCase {
 				System.out.println("Not a valid month"); 
 				break;
 		}
-		System.out.println();
 	}
 
 }

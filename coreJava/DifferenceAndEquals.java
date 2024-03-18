@@ -30,7 +30,7 @@ public class DifferenceAndEquals {
 		String string2 = scanner.nextLine();
 
 		System.out.println("Enter two bigdecimal. example: 0.45");
-		BigDecimal bigDecima1 = scanner.nextBigDecimal();
+		BigDecimal bigDecimal = scanner.nextBigDecimal();
 		BigDecimal bigDecimal2 = scanner.nextBigDecimal();
 
 		//integer
@@ -60,13 +60,13 @@ public class DifferenceAndEquals {
 		}
 
 		//Bigdecimal
-		if (bigDecima1 == bigDecimal2) {
+		if (bigDecimal == bigDecimal2) {
 			System.out.println("Bigdecimals are equal according to ==");
 		} else {
 			System.out.println("Bigdecimals are not equal according to ==");
 		}
 
-		if (bigDecima1.equals(bigDecimal2)) {
+		if (bigDecimal.equals(bigDecimal2)) {
 			System.out.println("Bigdecimals are equal according to .equals");
 		} else {
 			System.out.println("Bigdecimals are not equal according to .equals");
