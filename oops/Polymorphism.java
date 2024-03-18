@@ -3,8 +3,9 @@ package oops;
 /**
  * <h3>Polymorphism example</h3>
  * <p>
- * This program demonstrates the concept of Compile time and runtime polymorphism by showing 
- * the execution of concept method overloading and method overriding.
+ * This program demonstrates the concept of Compile time and runtime
+ * polymorphism by showing the execution of concept method overloading and
+ * method overriding.
  * </p>
  * 
  * @author Prathmesh
@@ -17,7 +18,7 @@ class Bikes {
 
 	String bike;
 
-	//Compile time Polymorphism 
+	// Compile time Polymorphism
 	String buyBike(int cc, String brand) {
 		bike = "Bullet";
 		return bike;
@@ -65,13 +66,13 @@ class Black extends Colors {
 }
 
 /**
- * This class shows the concept of polymorphism by calling the methods of the above classes that implement
- * method overloading and overriding.
+ * This class shows the concept of polymorphism by calling the methods of the
+ * above classes that implement method overloading and overriding.
  */
 public class Polymorphism {
 
 	public static void main(String[] args) {
-		//Compiletime Polymorphism
+		// Compiletime Polymorphism
 		Bikes bikes = new Bikes();
 		String commuterBike = bikes.buyBike(100);
 		String highEndBike = bikes.buyBike(350, "RoyalEnfield");
@@ -79,7 +80,7 @@ public class Polymorphism {
 		System.out.println("High end bike is " + highEndBike);
 		System.out.println("Normal bike is " + commuterBike);
 
-		//Runtime Polymorphism
+		// Runtime Polymorphism
 		Colors color = new Black();
 		color.paint();
 

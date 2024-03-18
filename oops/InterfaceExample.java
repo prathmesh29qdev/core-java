@@ -3,7 +3,8 @@ package oops;
 /**
  * <h3>Interface implementation</h3>
  * <p>
- * This program demonstrates the concept of interface and shows how a class override its uninitialized methods.
+ * This program demonstrates the concept of interface and shows how a class
+ * override its uninitialized methods.
  * </p>
  * 
  * @author Prathmesh
@@ -19,6 +20,7 @@ interface API {
 interface Interface1 extends API {
 
 	void show();
+
 	void notShow();
 
 }
@@ -26,6 +28,7 @@ interface Interface1 extends API {
 interface Interface2 extends API {
 
 	void print();
+
 	void notShow();
 
 }
@@ -33,7 +36,7 @@ interface Interface2 extends API {
 /**
  * This class implements both the interfaces and also execute the method body.
  */
-public class InterfaceExample implements Interface1,Interface2 {
+public class InterfaceExample implements Interface1, Interface2 {
 
 	@Override
 	public void print() {

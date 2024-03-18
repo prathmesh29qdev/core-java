@@ -8,7 +8,8 @@ import java.util.Comparator;
 /**
  * <h3>Comparable and Comparator</h3>
  * <p>
- * This program demonstrate the use of Comparable and Comparator and compares the values.
+ * This program demonstrate the use of Comparable and Comparator and compares
+ * the values.
  * </p>
  * 
  * @author Prathmesh
@@ -42,13 +43,13 @@ class Student implements Comparable<Student> {
 }
 
 /**
- * This class implements comparator and also calls the sort function using both the 
- * Comparator and Comparable.
+ * This class implements comparator and also calls the sort function using both
+ * the Comparator and Comparable.
  */
 public class ComparableAndComparator {
 
 	public static void main(String[] args) {
-		//comparator function
+		// comparator function
 		Comparator<Student> comparator = new Comparator<Student>() {
 			public int compare(Student student1, Student student2) {
 				if (student1.age > student2.age) {
@@ -66,7 +67,7 @@ public class ComparableAndComparator {
 		studentList.add(new Student(20, "Sohail"));
 		studentList.add(new Student(14, "Joshi"));
 
-		Collections.sort(studentList, comparator); //comparator - this compares list with comparator
+		Collections.sort(studentList, comparator); // comparator - this compares list with comparator
 		Collections.sort(studentList); // comparable (while executing this code, make one of these statement comment
 
 		for (Student students : studentList) {

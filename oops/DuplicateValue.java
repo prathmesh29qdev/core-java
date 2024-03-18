@@ -25,7 +25,7 @@ public class DuplicateValue {
 		/**
 		 * taking input in the list
 		 */
-		for (int i = 0 ; i < 7 ; i++) {
+		for (int i = 0; i < 7; i++) {
 			char value = scanner.next().charAt(0);
 			duplicate.add(value);
 		}
@@ -39,6 +39,7 @@ public class DuplicateValue {
 
 	/**
 	 * This method takes a list as input and removes the duplicate values from it.
+	 * 
 	 * @param charList
 	 */
 	private static void removeDuplicatesValues(List<Character> charList) {
@@ -47,10 +48,8 @@ public class DuplicateValue {
 
 		while (iterator.hasNext()) {
 			char currentChar = iterator.next();
-			if (filteredSet.contains(currentChar)) {
+			if (!filteredSet.add(currentChar)) {
 				iterator.remove();
-			} else {
-				filteredSet.add(currentChar);
 			}
 		}
 	}

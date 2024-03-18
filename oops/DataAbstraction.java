@@ -3,8 +3,9 @@ package oops;
 /**
  * <h3>Abstract keyword</h3>
  * <p>
- * This program demonstrates the use of abstract keyword to access the methods in the class.
- * And this class has an abstract method and another method with body.
+ * This program demonstrates the use of abstract keyword to access the methods
+ * in the class. And this class has an abstract method and another method with
+ * body.
  * </p>
  * 
  * @author Prathmesh

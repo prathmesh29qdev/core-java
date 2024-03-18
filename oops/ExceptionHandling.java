@@ -4,23 +4,23 @@ import java.util.Scanner;
 
 /**
  * <p>
- * <h3>Exception Handling</h3>
- * This program demonstrates the concept of Exception handling when user enters divisor as zero.
- * And also checks age above 18 to access the website if not then throws exception.
+ * <h3>Exception Handling</h3> This program demonstrates the concept of
+ * Exception handling when user enters divisor as zero. And also checks age
+ * above 18 to access the website if not then throws exception.
  * </p>
  * 
  * @author Prathmesh
  */
 class Division {
 
-	//throws Arithmetic Exception
+	// throws Arithmetic Exception
 	void divide(float number1, float number2) throws ArithmeticException {
 		float firstNumber = number1;
 		float secondNumber = number2;
 		if (secondNumber == 0) {
 			throw new ArithmeticException("The divisor cannot be zero");
 		} else {
-			float number3 = firstNumber/secondNumber;
+			float number3 = firstNumber / secondNumber;
 			System.out.println("Answer is : " + number3);
 		}
 	}
@@ -35,14 +35,13 @@ public class ExceptionHandling {
 	static void help() {
 		try {
 			throw new NullPointerException("Error thrown");
-		}
-		catch(NullPointerException e) {
+		} catch (NullPointerException e) {
 			System.out.println("Caught in help()");
 			throw e;
 		}
 	}
 
-	//throws Arithmetic Exception
+	// throws Arithmetic Exception
 	static void checkAge(int age) throws ArithmeticException {
 		if (age < 18) {
 			throw new ArithmeticException("Access denied below 18 years");
@@ -60,24 +59,21 @@ public class ExceptionHandling {
 		Division division = new Division();
 		try {
 			division.divide(number1, number2);
-		}
-		catch(ArithmeticException e) {
+		} catch (ArithmeticException e) {
 			System.out.println("Divisor should be greater than zero");
 			System.out.println(e);
-		}
-		finally {
+		} finally {
 			System.out.println("This is the finally block");
 		}
 
 		try {
 			help();
-		}
-		catch (NullPointerException e) {
+		} catch (NullPointerException e) {
 			System.out.println("Caught in main error name given below:");
 			System.out.println(e);
 		}
 		System.out.println("Enter your age:");
-		int age  = scanner.nextInt();
+		int age = scanner.nextInt();
 		checkAge(age);
 	}
 

@@ -3,7 +3,8 @@ package oops;
 /**
  * <h3>Data Encapsulation</h3>
  * <p>
- * This program demonstrates the concept of Encapsulation by accessing the methods through objects.
+ * This program demonstrates the concept of Encapsulation by accessing the
+ * methods through objects.
  * </p>
  * 
  * @author Prathmesh
@@ -45,11 +46,12 @@ class EncapsulatedClass {
 public class EncapsulationExample {
 
 	public static void main(String[] args) {
-		EncapsulatedClass encapsulatedClass =  new EncapsulatedClass();
+		EncapsulatedClass encapsulatedClass = new EncapsulatedClass();
 		encapsulatedClass.setAge(23);
 		encapsulatedClass.setName("Himesh");
 		encapsulatedClass.setHobby("Singing");
-		System.out.println(encapsulatedClass.getName() + " " + encapsulatedClass.getAge() + " " + encapsulatedClass.getHobby());
+		System.out.println(
+				encapsulatedClass.getName() + " " + encapsulatedClass.getAge() + " " + encapsulatedClass.getHobby());
 	}
 
 }

@@ -1,10 +1,10 @@
-package java;
+package coreJava;
 
 /**
  * <h3>This and Super keyword</h3>
  * <p>
- * This program demonstrates the use of 'this' and 'super' keyword. And this
- * class sets the value of the Car details like age,name,model and price.
+ * This program demonstrates the use of 'this' and 'super' keyword.
+ * And this class sets the value of the Car details like age,name,model and price.
  * </p>
  * 
  * @author Prathmesh
@@ -43,8 +43,7 @@ class Car {
 }
 
 /**
- * This class demonstrates inheritance and extends Car to use the super keyword
- * to access the parent's properties.
+ * This class demonstrates inheritance and extends Car to use the super keyword to access the parent's properties.
  */
 public class ThisSuper extends Car {
 

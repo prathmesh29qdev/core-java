@@ -21,7 +21,7 @@ public class SetsPractical {
 		int numberOfElement = scanner.nextInt();
 
 		System.out.println("Enter numbers to add in set");
-		for (int i = 0 ; i < numberOfElement ; i++) {
+		for (int i = 0; i < numberOfElement; i++) {
 			set.add(scanner.nextInt());
 		}
 
@@ -32,11 +32,11 @@ public class SetsPractical {
 			System.out.println("Set has this value");
 		}
 		if (!set.contains(number)) {
-			System.out.println("Set doesn't have this value");		
+			System.out.println("Set doesn't have this value");
 		}
 		System.out.println(set + " and " + set.size());
 
-		//iterator concept using hasNext
+		// iterator concept using hasNext
 		Iterator<Integer> it = set.iterator();
 
 		while (it.hasNext()) {

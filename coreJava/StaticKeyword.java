@@ -1,4 +1,4 @@
-package java;
+package coreJava;
 
 /**
  * <h3>Static keyword implementation</h3>
@@ -16,7 +16,7 @@ public class StaticKeyword {
 	 * initializes the object
 	 */
 	public StaticKeyword() {
-		count++;
+		count++; 
 		System.out.println(count);
 	}
 
@@ -34,8 +34,7 @@ public class StaticKeyword {
 }
 
 /**
- * This class represents the student details like roll number, name and college
- * name
+ * This class represents the student details like roll number, name and college name
  */
 class Student {
 
@@ -43,16 +42,16 @@ class Student {
 
 	String name;
 
-	static String college = "BITS"; // this is the default college for all students that's why declared static
+	static String college = "BITS"; //this is the default college for all students that's why declared static
 
-	static void change() {
-		college = "BITS Varnama"; // changing the college name for all students
+	static void change() {  
+		college = "BITS Varnama";  //changing the college name for all students
 	}
 
 	/**
 	 * Initializes a student with roll number and name.
 	 * 
-	 * @param roll          The roll number of the student
+	 * @param roll The roll number of the student
 	 * @param nameOfStudent is the name of the student
 	 */
 	Student(int roll, String nameOfStudent) {

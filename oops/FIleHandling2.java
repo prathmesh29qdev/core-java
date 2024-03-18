@@ -10,8 +10,8 @@ import java.util.Scanner;
 /**
  * <h3>File Handling Practical</h3>
  * <p>
- * This program show the use of file handling methods based on user input to select from the tasks
- * like to read, write or delete a file.
+ * This program show the use of file handling methods based on user input to
+ * select from the tasks like to read, write or delete a file.
  * </p>
  * 
  * @author Prathmesh
@@ -24,7 +24,7 @@ public class FIleHandling2 {
 		String fileName = scanner.nextLine();
 		File myFile = new File(fileName);
 
-		//creating a file
+		// creating a file
 		try {
 			myFile.createNewFile();
 			System.out.println("File created");
@@ -58,7 +58,7 @@ public class FIleHandling2 {
 			 * if this case is executed then will let user write in the file.
 			 */
 			case 1:
-				//writing in file
+				// writing in file
 				if (myFile.exists()) {
 					System.out.println("Enter a string you want to write in the file.");
 					String write = scanner.nextLine();
@@ -67,8 +67,7 @@ public class FIleHandling2 {
 						fileWriter.write(write);
 						fileWriter.close();
 						System.out.println(myFile.getName() + " File has been written.");
-					}
-					catch (IOException e) {
+					} catch (IOException e) {
 						System.out.println("Not able to write in file");
 						e.printStackTrace();
 					}
@@ -81,7 +80,7 @@ public class FIleHandling2 {
 			 * if this case is executed then will display the contents of the file.
 			 */
 			case 2:
-				//read the file
+				// read the file
 				if (myFile.exists()) {
 					try {
 						Scanner read = new Scanner(myFile);
@@ -91,8 +90,7 @@ public class FIleHandling2 {
 							System.out.println(line);
 						}
 						read.close();
-					} 
-					catch (FileNotFoundException e) {
+					} catch (FileNotFoundException e) {
 						System.out.println("File can't be read");
 						e.printStackTrace();
 					}
@@ -102,10 +100,10 @@ public class FIleHandling2 {
 				}
 				break;
 			/**
-			 * if this case gets executed then will delete the file if it exists	
+			 * if this case gets executed then will delete the file if it exists
 			 */
 			case 3:
-				//file deleting
+				// file deleting
 				if (myFile.exists()) {
 					System.out.println(myFile.getName());
 					boolean deleted = myFile.delete();

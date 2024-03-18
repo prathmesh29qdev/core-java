@@ -3,7 +3,8 @@ package oops;
 /**
  * <h3>Inheritance implementation</h3>
  * <p>
- * This program demonstrates the concept of inheritance using these classes which shows different types of inheritance.
+ * This program demonstrates the concept of inheritance using these classes
+ * which shows different types of inheritance.
  * </p>
  * 
  * @author Prathmesh
@@ -17,8 +18,8 @@ class Vehicle {
 }
 
 /**
- * The Bike class represents a specific type of vehicle, a bike.
- * It extends the Vehicle class, demonstrating single-level inheritance.
+ * The Bike class represents a specific type of vehicle, a bike. It extends the
+ * Vehicle class, demonstrating single-level inheritance.
  */
 class Bike extends Vehicle {
 
@@ -29,8 +30,8 @@ class Bike extends Vehicle {
 }
 
 /**
- * The Car class represents a specific type of vehicle, a car.
- * It extends the Vehicle class, demonstrating hierarchical inheritance.
+ * The Car class represents a specific type of vehicle, a car. It extends the
+ * Vehicle class, demonstrating hierarchical inheritance.
  */
 class Car extends Vehicle {
 
@@ -53,20 +54,23 @@ class RoyalEnfield extends Bike {
 }
 
 /**
- * The SuperMeteor class represents a specific type of Royal Enfield bike, a Super Meteor.
- * It extends the RoyalEnfield class, demonstrating hybrid inheritance.
+ * The SuperMeteor class represents a specific type of Royal Enfield bike, a
+ * Super Meteor. It extends the RoyalEnfield class, demonstrating hybrid
+ * inheritance.
  */
 class SuperMeteor extends RoyalEnfield {
 
 	void superMeteorClass() {
-		System.out.println("SuperMeteor is a RoyalEnfield bike which here combines several tyoe of inheritance and is an example of hybrid inheritance");
+		System.out.println(
+				"SuperMeteor is a RoyalEnfield bike which here combines several tyoe of inheritance and is an example of hybrid inheritance");
 	}
 
 }
 
 /**
- * The Interceptor class represents a specific type of Royal Enfield bike, an Interceptor.
- * It extends the RoyalEnfield class, demonstrating hierarchical inheritance.
+ * The Interceptor class represents a specific type of Royal Enfield bike, an
+ * Interceptor. It extends the RoyalEnfield class, demonstrating hierarchical
+ * inheritance.
  */
 class Interceptor extends RoyalEnfield {
 

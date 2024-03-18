@@ -15,9 +15,9 @@ import java.util.Set;
 public class MapAndSets {
 
 	public static void main(String[] args) {
-		HashMap<String, Integer> students  = new HashMap<>();
-		//map
-		//insertion
+		HashMap<String, Integer> students = new HashMap<>();
+		// map
+		// insertion
 		students.put("Manan", 34);
 		students.put("Chaman", 67);
 		students.put("Mahesh", 33);
